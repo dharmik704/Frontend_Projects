@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+.justify-bitween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.ml-50{
+    margin-left: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.justify-center{
+    justify-content: center;
+}
+span{
+    color: rgb(21, 181, 255);
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+
+/* header */
+
+header{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar{
+    padding: 10px 0;
+}
+header .navbar nav ul li{
+    list-style: none;
+    position: relative;
+}
+header .navbar nav ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+    right: 110px;
+    height: 2px;
+    background-color: rgb(21, 181, 255);
+    transition: all 0.3s ease-in-out;
+}
+header .navbar nav ul li a:hover::before{
+    right: 24px;
+}
+header .navbar nav ul li a.active2::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(2) a.active::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(3) a.active::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(4) a.active::before{
+    width: 62%;
+}
+header .navbar nav ul li:nth-of-type(5) a.active::before{
+    width: 61%;
+}
+header .navbar nav ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 25px;
+}
+header .navbar .logo img{
+    width: 150px;
+    margin-right: 20px;
+}
+header .navbar .btn{
+    background-color: rgb(21, 181, 255);
+    padding: 8px 50px;
+    border: 1px solid rgb(21, 181, 255);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar .btn a{
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar .btn:hover{
+    background-color: white;
+    border: 1px solid rgb(21, 181, 255);
+}
+header .navbar .btn:hover a{
+    color: rgb(21, 181, 255);
+}
+.fixed{
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 5px 5px 20px -5px black;
+    z-index: 999;
+}
+
+/* main */
+
+main{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+/* banner */
+
+.banner .banner-bg{
+    background: url(../image/banner-bg.jpg) rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 100px 0;
+}
+.banner .title h2{
+    margin: 85px 0;
+    font-size: 70px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    line-height: 75px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    opacity: 0.9;
+}
+
+/* about-cantant */
+
+.about-items{
+    padding: 100px 0;
+}
+.about-items .about-contant{
+    padding: 130px 0;
+    transform: translate(-25px ,0);
+}
+.about-items .about-contant h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: rgba(160, 160, 160, 0.2);
+}
+.about-items .about-contant h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(121, 121, 121);
+    opacity: 0.8;
+    transform: translate(0, -20px);
+    line-height: 0;
+}
+.about-items .about-contant h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    max-width: 450px;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.about-items .about-contant p{
+    color: rgb(181 181 181);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 100;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.about-items .image-1{
+    position: relative;
+}
+.about-items .image-1 img{
+    width: 95%;
+    height: 420px;
+    object-fit: cover;
+    position: relative;
+    transform: translate(0, 60px);
+}
+.about-items .image-1::before{
+    content: '';
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background: url(../image/background-img.png);
+}
+.about-items .image-2 img{
+    width: 95%;
+    height: 420px;
+    object-fit: cover;
+    z-index: 1;
+    transform: translate(15px , 90px);
+}
+
+/* counter */
+
+.counter{
+    background: url(../image/counter-bg.jpg) rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 100px 0;
+    margin-top: 50px;
+}
+.counter .counter-card .card .card-icon img{
+    width: 90px;
+    margin-bottom: 15px;
+}
+.count{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+.counter .counter-card .card .card-body h5{
+    color: white;
+    font-size: 30px;
+}
+
+/* team */
+
+.team{
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+.team .team-title h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: rgb(116, 116, 116);
+    opacity: 0.1;
+}
+.team .team-title h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(151, 151, 151);
+    opacity: 0.7;
+    transform: translate(0, -10px);
+    line-height: 0;
+}
+.team .team-title h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    color: black;
+}
+.team .team-cards .card{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.6);
+}
+.team .team-cards .card .image img{
+    width: 100%;
+}
+.team .team-cards .card .body h3{
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display';
+}
+.team .team-cards .card .body p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    color: rgb(102 102 102);
+    margin-bottom: 10px;
+}
+.team .team-cards .card .body{
+    position: relative;
+}
+.team .team-cards .card .body .icon{
+    transform: translate(0, 40px);
+    background: white;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    padding: 20px 0;
+    transition: all 0.2s ease-in-out;
+}
+.team .team-cards .card:hover .body .icon{
+    opacity: 1;
+    bottom: 15px;
+}
+.team .team-cards .card .body .icon a i{
+    color: rgb(21, 181, 255);
+    margin: 8px 7px;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.team .team-cards .card .body .icon a:hover i{
+    color: black;
+}
+.team .swiper {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.swiper-pagination-bullet{
+    background-color: black;
+    width: 12px;
+    height: 12px;
+}
+
+
+/* footer */
+
+footer .top-footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 70px;
+}
+footer .footer-contant{
+    border-bottom: 1px solid rgba(128, 130, 131, 0.5);
+    padding-bottom: 50px;
+}
+footer .footer-contant .logo img{
+    width: 150px;
+}
+footer .footer-contant .logo .contant p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 15px 0;
+}
+
+
+footer .footer-contant .quick-link{
+    margin-top: 20px;
+}
+footer .footer-contant .quick-link h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+}
+footer .footer-contant .quick-link h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .quick-link{
+    margin-left: 40px;
+}
+footer .footer-contant .quick-link ul{
+    margin-top: 50px;
+}
+footer .footer-contant .quick-link ul i{
+    color: rgb(139, 139, 139);
+}
+footer .footer-contant .quick-link ul{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style: none;
+}
+footer .footer-contant .quick-link ul li{
+    margin: 15px 0;
+    font-size: 18px;
+}
+footer .footer-contant .quick-link ul li a{
+    margin: 0 8px;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .quick-link ul li a:hover{
+    color: rgb(21, 181, 255);
+}
+
+
+footer .footer-contant .contact-info{
+    margin-left: 20px;
+    margin-top: 22px;
+}
+footer .footer-contant .contact-info h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 15px;
+}
+footer .footer-contant .contact-info h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .contact-info ul{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style: none;
+    margin-top: 55px;
+}
+footer .footer-contant .contact-info ul li{
+    margin: 20px 0;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+}
+footer .footer-contant .contact-info ul li i{
+    color: rgb(139, 139, 139);
+    margin-right: 5px;
+}
+footer .footer-contant .contact-info ul li:nth-of-type(3) i{
+    margin-right: 15px;
+}
+footer .footer-contant .contact-info ul li:nth-of-type(4) i{
+    margin-right: 20px;
+}
+footer .footer-contant .contact-info ul li a{
+    margin: 0 8px;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .contact-info ul li a:hover{
+    color: rgb(21, 181, 255);
+}
+
+
+footer .footer-contant .newsletter{
+    margin-left: 50px;
+    margin-top: 22px;
+}
+footer .footer-contant .newsletter h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 15px;
+}
+footer .footer-contant .newsletter h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .newsletter p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+footer .footer-contant .newsletter form .input-box{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(53, 53, 56);
+    position: relative;
+    border: 1px solid rgb(53, 53, 56);
+    margin: 30px 0;
+}
+footer .footer-contant .newsletter form .input-box i{
+    padding: 15px 15px;
+    font-size: 18px;
+    color: rgba(255,255,255,.8);
+}
+footer .footer-contant .newsletter form .input-box input{
+    position: absolute;
+    background: transparent;
+    padding: 12.5px 10px;
+    margin-left: -15px;
+    border: 1px solid rgb(53, 53, 56);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+footer .footer-contant .newsletter form .input-box input::placeholder{
+    color: rgba(255,255,255,.8);
+    font-size: 15px;
+}
+footer .footer-contant .newsletter form .input-box .submit-box{
+    width: 60px;
+    height: 49px;
+    background-color: rgb(21, 181, 255);
+    border: 1px solid rgb(21, 181, 255);
+    position: absolute;
+    top: -1px;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter form .input-box .submit-box i{
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter form .input-box .submit-box:hover{
+    background-color: rgb(20, 147, 206);
+    border: 1px solid rgb(20, 147, 206);
+}
+footer .footer-contant .newsletter ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+footer .footer-contant .newsletter ul li a{
+    font-size: 25px;
+    color: white;
+}
+footer .footer-contant .newsletter ul li a i{
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter ul li:nth-of-type(1) a:hover i{
+    color: rgb(66, 103, 178);
+}
+footer .footer-contant .newsletter ul li:nth-of-type(2) a:hover i{
+    color: rgb(29, 155, 240);
+}
+footer .footer-contant .newsletter ul li:nth-of-type(3) a:hover i{
+    background: linear-gradient(rgb(254,218,117), rgb(250,126,30), rgb(214,41,118), rgb(150,47,191), rgb(79,91,213));
+    border-radius: 5px;
+}
+footer .footer-contant .newsletter ul li:nth-of-type(4) a:hover i{
+    color: rgb(230, 0, 35);
+}
+
+footer .bottom-footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 25px 0;
+}
+footer .bottom-footer p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+footer .bottom-footer p a{
+    transition: all 0.4s ease-in-out;
+}
+footer .bottom-footer p a:hover{
+    color: rgb(21, 181, 255);
+}

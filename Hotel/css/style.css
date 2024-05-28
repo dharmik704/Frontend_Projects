@@ -1,0 +1,1476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+.justify-bitween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.ml-50{
+    margin-left: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+span{
+    color: rgb(21, 181, 255);
+}
+
+/* header */
+
+header{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar{
+    padding: 10px 0;
+}
+header .navbar nav ul li{
+    list-style: none;
+    position: relative;
+}
+header .navbar nav ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+    right: 110px;
+    height: 2px;
+    background-color: rgb(21, 181, 255);
+    transition: all 0.3s ease-in-out;
+}
+header .navbar nav ul li a:hover::before{
+    right: 24px;
+}
+header .navbar nav ul li a.active::before{
+    width: 51%;
+}
+header .navbar nav ul li:nth-of-type(2) a.active::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(3) a.active::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(4) a.active::before{
+    width: 62%;
+}
+header .navbar nav ul li:nth-of-type(5) a.active::before{
+    width: 61%;
+}
+header .navbar nav ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 25px;
+}
+header .navbar .logo img{
+    width: 150px;
+    margin-right: 20px;
+}
+header .navbar .btn{
+    background-color: rgb(21, 181, 255);
+    padding: 8px 50px;
+    border: 1px solid rgb(21, 181, 255);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar .btn a{
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar .btn:hover{
+    background-color: white;
+    border: 1px solid rgb(21, 181, 255);
+}
+header .navbar .btn:hover a{
+    color: rgb(21, 181, 255);
+}
+.fixed{
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 5px 5px 20px -5px black;
+    z-index: 999;
+}
+
+/* banner */
+
+.banner .swiper{
+    width: 100%;
+    height: 100%;
+}
+.banner .swiper .swiper-wrapper .banner-bg-1{
+    background: url(../image/banner-bg-1.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 250px 0;
+}
+.banner .swiper .swiper-wrapper .banner-bg-2{
+    background: url(../image/banner-bg-2.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 250px 0;
+}
+.banner .swiper .swiper-wrapper .banner-bg-3{
+    background: url(../image/banner-bg-3.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 250px 0;
+}
+.swiper-pagination{
+    margin: 30px 0;
+}
+.swiper-pagination-bullet-active{
+    background-color: white;
+    opacity: 0.7;
+}
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h4{
+    color: white;
+    transform: translate(0 , -60px);
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Philosopher', sans-serif;
+    opacity: 0.9;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+    margin-top: 50px;
+    color: white;
+    font-size: 150px;
+    opacity: 0.3;
+    font-weight: 400;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0px;
+    letter-spacing: 2px;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h3{
+    font-size: 70px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    line-height: 80px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    transform: translate(0px , -10px);
+}
+
+/* chack-availability */
+
+.chack-availability form .form-box{
+    background-color: white;
+    padding: 30px 0;
+    width: 100%;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    transform: translate(0 , -30px);
+    z-index: 1;
+    position: relative;
+}
+.chack-availability form .form-box .card{
+    width: 235px;
+}
+.chack-availability form .form-box .card input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 0;
+    font-size: 16px;
+    color: gray;
+    margin-left: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.chack-availability form .form-box .card input:focus{
+    color: gray;
+}
+.chack-availability form .form-box .card i{
+    color: gray;
+    transform: translate(-25px , 15px);
+    opacity: 0.5;
+    font-size: 14x;
+}
+.ui-datepicker .ui-datepicker-prev{
+    background: url(../image/pre-btn.png);
+    left: 0;
+    top: 2px;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-position: center center;
+    border: 0;
+    width: 20px;
+    height: 30px;
+    opacity: 0.5;
+}
+.ui-datepicker .ui-datepicker-next{
+    background: url(../image/next-btn.png);
+    right: 0;
+    top: 2px;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-position: center center;
+    border: 0;
+    width: 20px;
+    height: 30px;
+    opacity: 0.5;
+}
+.ui-datepicker-header{
+    background: 0 0;
+    border: 0;
+}
+.ui-datepicker-title{
+    color: #2a2a2a;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.ui-datepicker.ui-widget{
+    padding: 8px;
+    width: auto;
+}
+.ui-widget.ui-widget-content{
+    border: 1px solid #d3d3d3;
+    border-radius: 0;
+    margin-top: 5px;
+}
+.ui-datepicker.ui-widget .ui-datepicker-calendar{
+    border: 0;
+    margin-bottom: 24px;
+}
+.ui-datepicker.ui-widget .ui-datepicker-calendar th{
+    color: #999;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.ui-datepicker.ui-widget .ui-datepicker-calendar th span{
+    border-bottom: 1px dotted #999;
+}
+.ui-widget-content .ui-state-default{
+    border: 0;
+}
+.ui-datepicker-calendar .ui-state-default{
+    padding: 5px;
+    color: rgb(102 102 102);
+    font-size: 12px;
+    line-height: 17px;
+    text-align: right;
+    background: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+.ui-datepicker-calendar .ui-state-default:hover{
+    background: rgb(21, 181, 255);
+}
+.chack-availability form .form-box .card select{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 0;
+    font-size: 16px;
+    color: gray;
+    margin-left: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.chack-availability form .form-box .card:nth-of-type(4){
+    margin-left: 15px
+}
+.chack-availability form .form-box .card input[type="button"]{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 0;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(21, 181, 255);
+    margin-left: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+.chack-availability form .form-box .card input[type="button"]:hover{
+    background-color: rgb(20, 147, 206);
+}
+
+/* about-us */
+
+.about{
+    padding: 70px 0;
+}
+.about .image-1{
+    position: relative;
+}
+.about .image-1 img{
+    width: 95%;
+    height: 420px;
+    object-fit: cover;
+    position: relative;
+    transform: translate(0, 60px);
+}
+.about .image-1::before{
+    content: '';
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background: url(../image/background-img.png);
+}
+.about .image-2 img{
+    width: 95%;
+    height: 420px;
+    object-fit: cover;
+    z-index: 1;
+    transform: translate(15px , 90px);
+}
+.about .about-contant{
+    padding: 130px 0;
+    transform: translate(20px ,0);
+}
+.about .about-contant h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: rgb(242 242 242);
+}
+.about .about-contant h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(151, 151, 151);
+    opacity: 0.8;
+    transform: translate(0, -20px);
+    line-height: 0;
+}
+.about .about-contant h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.about .about-contant p{
+    color: rgb(181 181 181);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 100;
+    max-width: 550px;
+    margin: auto;
+}
+
+/* rooms&suits */
+
+.rooms{
+    margin-top: 50px;
+    padding: 100px 0;
+    background-color: rgb(248 245 240);
+}
+.rooms .heding h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: rgba(172, 170, 170,0.2);
+}
+.rooms .heding h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(151, 151, 151);
+    opacity: 0.9;
+    transform: translate(0, -10px);
+    line-height: 0;
+}
+.rooms .heding h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.rooms .room-images .card{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.rooms .room-images .card .image{
+    position: relative;
+    margin: 0 12px;
+    overflow: hidden;
+}
+.rooms .room-images .card .image img{
+    width: 100%;
+    height: 500px;
+    filter: brightness(0.75);
+    transition: all 0.4s ease-in-out;  
+}
+.rooms .room-images .card .image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.rooms .room-images .card:hover .image::before{
+    opacity: 1;
+    z-index: 9;
+}
+.rooms .room-images .card:hover .image img{
+    transform: scale(1.03);
+}
+.rooms .room-images .card .card-cantent{
+    position: absolute;
+    padding: 20px 30px;
+    bottom: 25px;
+    left: 0;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .room-images .card:hover .card-cantent{
+    transform: translate(0, -50px);
+}
+.rooms .room-images .card .card-cantent h3{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .room-images .card .card-cantent h3 sub{
+    margin-left: 10px;
+}
+.rooms .room-images .card .card-cantent h3::before{
+    content: '/';
+    position: absolute;
+    font-size: 18px;
+    top: 5px;
+    left: 54px;
+    margin-left: 5px;
+    color: white;
+}
+.rooms .room-images .card .card-cantent h2{
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    position: relative;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .room-images .card .card-cantent h2::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    opacity: 0.5;
+    top: 53px;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+}
+.rooms .room-images .card:hover .card-cantent h2::before{
+    width: 365px;
+}
+.rooms .room-images .card .bottom-cantent{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    padding: 0 30px;
+    bottom: -45px;
+    left: 0;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .room-images .card .bottom-cantent i{
+    margin-right: 10px;
+    color: white;
+}
+.rooms .room-images .card:hover .bottom-cantent{
+    transform: translate(0, -70px);
+}
+.rooms .room-images .card .bottom-cantent a{
+    margin-left: 130px;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+.rooms .room-images .card .bottom-cantent a:hover{
+    color: rgba(20, 147, 206);
+}
+.rooms .card-2{
+    width: 100%;
+    height: 370px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.rooms .card-2 .image{
+    position: relative;
+    margin: 0 12px;
+    overflow: hidden;
+}
+.rooms .card-2 .image img{
+    width: 100%;
+    height: 370px;
+    filter: brightness(0.75);
+    transition: all 0.4s ease-in-out;  
+}
+.rooms .card-2 .image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.rooms .card-2:hover .image::before{
+    opacity: 1;
+    z-index: 9;
+}
+.rooms .card-2:hover .image img{
+    transform: scale(1.03);
+}
+.rooms .card-2 .card-cantent{
+    position: absolute;
+    padding: 20px 30px;
+    bottom: 25px;
+    left: 0;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .card-2:hover .card-cantent{
+    transform: translate(0, -50px);
+}
+.rooms .card-2 .card-cantent h3{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .card-2 .card-cantent h3 sub{
+    margin-left: 10px;
+}
+.rooms .card-2 .card-cantent h3::before{
+    content: '/';
+    position: absolute;
+    font-size: 18px;
+    top: 5px;
+    left: 54px;
+    margin-left: 5px;
+    color: white;
+}
+.rooms .card-2 .card-cantent h2{
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    position: relative;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .card-2 .card-cantent h2::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    opacity: 0.5;
+    top: 53px;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+}
+.rooms .card-2:hover .card-cantent h2::before{
+    width: 575px;
+}
+.rooms .card-2 .bottom-cantent{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    padding: 0 30px;
+    bottom: -45px;
+    left: 0;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+.rooms .card-2 .bottom-cantent i{
+    margin-right: 10px;
+    color: white;
+}
+.rooms .card-2:hover .bottom-cantent{
+    transform: translate(0, -70px);
+}
+.rooms .card-2 .bottom-cantent a{
+    margin-left: 345px;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+.rooms .card-2 .bottom-cantent a:hover{
+    color: rgba(20, 147, 206);
+}
+
+/* hotel-part */
+
+.hotel-part{
+    padding: 70px 0;
+    background: rgba(0, 0, 0, 0.9);
+}
+.hotel-part .image{
+    background: url(../image/hotel-part-img1.webp);
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 60px;
+    position: relative;
+    cursor: pointer;
+}
+.hotel-part .image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 147, 206, 0.3);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hotel-part .image:hover::before{
+    opacity: 1;
+}
+.hotel-part .image .contant img{
+    width: 70px;
+    filter: invert(100%);
+}
+.hotel-part .image .contant{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hotel-part .image:hover .contant{
+    opacity: 1;
+}
+.hotel-part .image .contant .title h4{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.hotel-part .image .contant .title h2{
+    color: white;
+    font-weight: 400;
+    font-size: 38px;
+    margin-left: 40px;
+    font-family: 'Playfair Display';
+}
+.hotel-part .image-2{
+    background: url(../image/hotel-part-img2.jpg);
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 65px;
+    cursor: pointer;
+    position: relative;
+}
+.hotel-part .image-2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 147, 206, 0.3);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hotel-part .image-2:hover::before{
+    opacity: 1;
+}
+.hotel-part .image-2 .contant img{
+    width: 65px;
+    filter: invert(100%);
+}
+.hotel-part .image-2 .contant{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hotel-part .image-2:hover .contant{
+    opacity: 1;
+}
+.hotel-part .image-2 .contant .title h4{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.hotel-part .image-2 .contant .title h2{
+    color: white;
+    font-weight: 400;
+    font-size: 38px;
+    margin-left: 40px;
+    font-family: 'Playfair Display';
+}
+.hotel-part .image-3{
+    background: url(../image/hotel-part-img3.webp);
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 60px;
+    cursor: pointer;
+    position: relative;
+}
+.hotel-part .image-3::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 147, 206, 0.3);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hotel-part .image-3:hover::before{
+    opacity: 1;
+}
+.hotel-part .image-3 .contant img{
+    width: 70px;
+    filter: invert(100%);
+}
+.hotel-part .image-3 .contant{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.hotel-part .image-3:hover .contant{
+    opacity: 1;
+}
+.hotel-part .image-3 .contant .title h4{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.hotel-part .image-3 .contant .title h2{
+    color: white;
+    font-weight: 400;
+    font-size: 38px;
+    margin-left: 40px;
+    font-family: 'Playfair Display';
+}
+
+/* services */
+
+.services{
+    padding: 120px 0;
+    background-color: rgb(248 245 240);
+}
+.services .title h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: rgba(172, 170, 170,0.2);
+}
+.services .title h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(151, 151, 151);
+    opacity: 0.9;
+    transform: translate(0, -10px);
+    line-height: 0;
+}
+.services .title h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.services .card{
+    width: 94%;
+    height: 250px;
+    border: 1px solid rgb(21, 181, 255, 0.3);
+    padding: 40px 40px;
+    margin-top: 60px;
+    position: relative;
+    background: transparent;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.services .row .w-3:nth-of-type(4){
+    margin-top: -32px;
+}
+.services .row .w-3:nth-of-type(5){
+    margin-top: -32px;
+}
+.services .row .w-3:nth-of-type(6){
+    margin-top: -32px;
+}
+.services .card .card-cantent .bg-img img{
+    width: 150px;
+    margin: 10px 0;
+    filter: grayscale(100%);
+    opacity: 0.1;
+}
+.services .card .card-cantent .card-image img{
+    width: 60px;
+    margin-bottom: -8px;
+    opacity: 0.9;
+}
+.services .card .card-cantent .card-title{
+    position: absolute;
+    padding: 30px 25px;
+    top: 0;
+    left: 0;
+}
+.services .card .card-cantent .card-body h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 15px 0;
+    font-weight: 400;
+}
+.services .card .card-cantent .card-body p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    color: rgb(102 102 102);
+}
+
+/* events */
+
+.events{
+    padding: 120px 0;
+}
+.events .event-title h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: rgb(242 242 242);
+}
+.events .event-title h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(151, 151, 151);
+    opacity: 0.9;
+    transform: translate(0, -10px);
+    line-height: 0;
+}
+.events .event-title h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.events .swiper{
+    width: 100%;
+    height: 100%;
+}
+.events .swiper .swiper-wrapper{
+    margin-top: 30px;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box{
+    width: 400px;
+    height: 430px;
+    display: flex;
+    background-color: aqua;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box{
+    position: relative;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .image::before{
+    content: '';
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .contant{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 30px;
+    color: white;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .contant h4{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .contant h3{
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .price{
+    background-color: rgba(21, 181, 255, 0.7);
+    padding: 20px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-25px, 25px);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    border-radius: 5px;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .price h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+.events .swiper .swiper-wrapper .swiper-slide .box .price h4{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* review */
+
+.review{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.9);
+}
+.review .review-title h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    /* color: rgb(242 242 242); */
+    color: white;
+    opacity: 0.1;
+}
+.review .review-title h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* color: rgb(151, 151, 151); */
+    color: white;
+    opacity: 0.7;
+    transform: translate(0, -10px);
+    line-height: 0;
+}
+.review .review-title h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    color: white;
+}
+.review .review-cards .swiper-slide{
+    padding: 50px 0;
+    opacity: 0.3;
+}
+.review .review-content .review-cards .swiper-slide{
+    opacity: 0.4;
+}
+.review .review-cards .card{
+    padding: 10px 20px;
+}
+.review .review-cards .card .image img{
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.review .review-cards .card .body p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    /* color: rgb(102 102 102); */
+    color: white;
+    margin-bottom: 10px;
+}
+.review .review-cards .card .body h3{
+    font-size: 25px;
+    /* color: rgb(18, 0, 54); */
+    color: white;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display';
+}
+.review .review-cards .card .body .icon i{
+    color: rgb(255, 176, 5);
+}
+.review .review-cards .swiper-slide-active{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 253, 253, 0.5);
+    box-shadow: 5px 5px 10px -10px rgb(255, 255, 255);
+    opacity: 1;
+    transform: scale(1.09);
+    background: transparent;
+}
+.review .swiper {
+    padding: 50px 0;
+}
+.swiper-pagination-bullet{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+
+/* contact */
+
+.contact{
+    padding: 120px 0;
+    background-color: rgb(248 245 240);
+}
+.contact .contact-title h2{
+    font-size: 130px;
+    font-weight: 100;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    line-height: 0;
+    letter-spacing: 2px;
+    color: rgba(172, 170, 170,0.2);
+}
+.contact .contact-title h4{
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(151, 151, 151);
+    opacity: 0.9;
+    transform: translate(0, -10px);
+    line-height: 0;
+}
+.contact .contact-title h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.contact .contact-contant{
+    margin: 70px 0;
+}
+.contact .contact-contant .image img{
+    width: 130%;
+}
+.contact .contact-contant .contact-form form{
+    background: white;
+    padding: 45px;
+    margin-top: 26px;
+}
+.contact .contact-contant .contact-form form .input-box{
+    position: relative;
+}
+textarea{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.input{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 15px 0;
+    font-size: 20px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.placeholder{
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    cursor: text;
+    pointer-events: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.input:focus,
+.input:valid{
+    border: 1px solid rgb(21, 181, 255);
+    border-radius: 3px;
+    color: rgb(102 102 102);
+}
+.input:focus ~ .placeholder,
+.input:valid ~ .placeholder{
+    transform: translateY(-27px);
+    color: rgb(21, 181, 255);
+    background: white;
+}
+form .input-box:nth-of-type(4) .placeholder{
+    position: absolute;
+    bottom: 53px;
+    left: 0;
+    cursor: text;
+    transition: all 0.3s ease-in-out;
+}
+.input-box:nth-of-type(4) .input:focus ~ .placeholder{
+    transform: translateY(-px);
+    color: rgb(21, 181, 255);
+    background: white;
+}
+.contact .contact-contant .contact-form form .btn input{
+    padding: 15px 40px;
+    font-size: 20px;
+    background-color: rgb(21, 181, 255);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.4s ease-in-out;
+}
+.contact .contact-contant .contact-form form .btn input:hover{
+    background-color: rgb(20, 147, 206);
+}
+
+/* footer */
+
+footer .top-footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 70px;
+}
+footer .footer-contant{
+    border-bottom: 1px solid rgba(128, 130, 131, 0.5);
+    padding-bottom: 50px;
+}
+footer .footer-contant .logo img{
+    width: 150px;
+}
+footer .footer-contant .logo .contant p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 15px 0;
+}
+
+
+footer .footer-contant .quick-link{
+    margin-top: 20px;
+}
+footer .footer-contant .quick-link h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+}
+footer .footer-contant .quick-link h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .quick-link{
+    margin-left: 40px;
+}
+footer .footer-contant .quick-link ul{
+    margin-top: 50px;
+}
+footer .footer-contant .quick-link ul i{
+    color: rgb(139, 139, 139);
+}
+footer .footer-contant .quick-link ul{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style: none;
+}
+footer .footer-contant .quick-link ul li{
+    margin: 15px 0;
+    font-size: 18px;
+}
+footer .footer-contant .quick-link ul li a{
+    margin: 0 8px;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .quick-link ul li a:hover{
+    color: rgb(21, 181, 255);
+}
+
+
+footer .footer-contant .contact-info{
+    margin-left: 20px;
+    margin-top: 22px;
+}
+footer .footer-contant .contact-info h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 15px;
+}
+footer .footer-contant .contact-info h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .contact-info ul{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style: none;
+    margin-top: 55px;
+}
+footer .footer-contant .contact-info ul li{
+    margin: 20px 0;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+}
+footer .footer-contant .contact-info ul li i{
+    color: rgb(139, 139, 139);
+    margin-right: 5px;
+}
+footer .footer-contant .contact-info ul li:nth-of-type(3) i{
+    margin-right: 15px;
+}
+footer .footer-contant .contact-info ul li:nth-of-type(4) i{
+    margin-right: 20px;
+}
+footer .footer-contant .contact-info ul li a{
+    margin: 0 8px;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .contact-info ul li a:hover{
+    color: rgb(21, 181, 255);
+}
+
+
+footer .footer-contant .newsletter{
+    margin-left: 50px;
+    margin-top: 22px;
+}
+footer .footer-contant .newsletter h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 15px;
+}
+footer .footer-contant .newsletter h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .newsletter p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+footer .footer-contant .newsletter form .input-box{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(53, 53, 56);
+    position: relative;
+    border: 1px solid rgb(53, 53, 56);
+    margin: 30px 0;
+}
+footer .footer-contant .newsletter form .input-box i{
+    padding: 15px 15px;
+    font-size: 18px;
+    color: rgba(255,255,255,.8);
+}
+footer .footer-contant .newsletter form .input-box input{
+    position: absolute;
+    background: transparent;
+    padding: 12.5px 10px;
+    margin-left: -15px;
+    border: 1px solid rgb(53, 53, 56);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+footer .footer-contant .newsletter form .input-box input::placeholder{
+    color: rgba(255,255,255,.8);
+    font-size: 15px;
+}
+footer .footer-contant .newsletter form .input-box .submit-box{
+    width: 60px;
+    height: 49px;
+    background-color: rgb(21, 181, 255);
+    border: 1px solid rgb(21, 181, 255);
+    position: absolute;
+    top: -1px;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter form .input-box .submit-box i{
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter form .input-box .submit-box:hover{
+    background-color: rgb(20, 147, 206);
+    border: 1px solid rgb(20, 147, 206);
+}
+footer .footer-contant .newsletter ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+footer .footer-contant .newsletter ul li a{
+    font-size: 25px;
+    color: white;
+}
+footer .footer-contant .newsletter ul li a i{
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter ul li:nth-of-type(1) a:hover i{
+    color: rgb(66, 103, 178);
+}
+footer .footer-contant .newsletter ul li:nth-of-type(2) a:hover i{
+    color: rgb(29, 155, 240);
+}
+footer .footer-contant .newsletter ul li:nth-of-type(3) a:hover i{
+    background: linear-gradient(rgb(254,218,117), rgb(250,126,30), rgb(214,41,118), rgb(150,47,191), rgb(79,91,213));
+    border-radius: 5px;
+}
+footer .footer-contant .newsletter ul li:nth-of-type(4) a:hover i{
+    color: rgb(230, 0, 35);
+}
+
+footer .bottom-footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 25px 0;
+}
+footer .bottom-footer p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+footer .bottom-footer p a{
+    transition: all 0.4s ease-in-out;
+}
+footer .bottom-footer p a:hover{
+    color: rgb(21, 181, 255);
+}

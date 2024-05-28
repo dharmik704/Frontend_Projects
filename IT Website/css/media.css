@@ -1,0 +1,459 @@
+/* xl */
+
+@media(max-width:1399px){
+    .container{
+        max-width: 1140px;
+    }
+
+    /* banner */
+
+    .banner .container .banner-cantent{
+        padding: 180px 20px;
+    }
+    .banner .banner-bg-1 .container .banner-cantent p{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .banner .banner-bg-1 .container .banner-cantent h2{
+        font-size: 50px;
+        max-width: 550px;
+        margin-bottom: 30px;
+    }
+    .banner .banner-bg-1 .container .banner-cantent h2::after{
+        width: 95px;
+        height: 2px;
+        top: 120px;
+        right: 50px;
+    }
+    .banner .banner-bg-1 .container .banner-cantent .btn a{
+        font-size: 15px;
+        padding: 15px 25px;
+    }
+    .banner .banner-bg-2 .container .banner-cantent p{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .banner .banner-bg-2 .container .banner-cantent h2{
+        font-size: 50px;
+        max-width: 550px;
+        margin-bottom: 30px;
+    }
+    .banner .banner-bg-2 .container .banner-cantent h2::after{
+        width: 55px;
+        height: 2px;
+        top: 120px;
+        right: 18px;
+    }
+    .banner .banner-bg-2 .container .banner-cantent .btn a{
+        font-size: 15px;
+        padding: 15px 25px;
+    }
+}
+
+/* lg */
+
+@media(max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+    .w-lg-3{
+        width: 33.33%;
+    }
+
+    /* service */
+
+    .service .up-icon a{
+        right: 50px;
+    }
+
+    /* counter */
+
+    .counter .counter-card .card{
+        padding: 0 40px;
+    }
+
+    /* team  */
+
+    .team .title h2::before{
+        right: 410px;
+    }
+
+    /* price */
+
+    .price .title h2::before{
+        right: 410px;
+    }
+
+    /* review */
+
+    .review .title h2::before{
+        right: 410px;
+    }
+
+    /* blog */
+
+    .blog .title h2::before{
+        right: 410px;
+    }
+
+    /* contact */
+
+    .contact .title h2::before{
+        right: 410px;
+    }
+
+    /* footer */
+
+    .footer .newsletter form .input-box i{
+        font-size: 15px;
+        margin-top: 1px;
+    }
+    .footer .newsletter form .input-box input::placeholder{
+        font-size: 12px;
+    }
+    .footer .newsletter form .input-box input{
+        padding: 10px 8px;
+        font-size: 12px;
+        margin-top: 6px;
+    }
+}
+
+/* md */
+
+@media(max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+
+    /* header */
+
+    header .topbar{
+        display: none;
+    }
+    header .main-header .menu ul{
+        position: absolute;
+        top: 95px;
+        left: 0;
+        background: white;
+        width: 97%;
+        display: none;
+        margin: 0 15px;
+        border-left: 30px solid white;
+        border-right: 30px solid white;
+    }
+    header .main-header .menu ul li{
+        border-bottom: 1px solid rgba(207, 180, 180, 0.3);
+        display: block;
+    }
+    header .main-header .menu ul li a{
+        display: block;
+        color: black;
+        margin: 15px 20px;
+    }
+    header .main-header .menu ul li:first-child a{
+        margin-top: 25px;
+    }
+    header .main-header .menu ul li:last-child a{
+        margin-bottom: 25px;
+    }
+    header .main-header .header-content .search a i{
+        display: none;
+    }
+    header .main-header .header-content .search .toggle{
+        display: block;
+    }
+
+    .fixed{
+        display: none;
+    }
+
+    /* banner */
+
+    .banner .container .banner-cantent{
+        padding: 120px 20px;
+    }
+
+    /* service */
+
+    .service .row .w-3:nth-of-type(3){
+        margin-top: 30px;
+    }
+
+    /* counter */
+
+    .counter .counter-card .card{
+        padding: 0;
+    }
+
+    /* about */
+
+    .about .about-contant .title{
+        margin-left: 0;
+        padding-top: 150px;
+    }
+
+    /* team  */
+    
+    .team .title h2::before{
+        right: 290px;
+    }
+    .team .row .w-3:nth-of-type(2){
+        margin-top: 30px;
+    }
+    .team .row .w-3:nth-of-type(3){
+        margin-top: 30px;
+    }
+    .team .team-card .card .box a{
+        padding: 15px 35px;
+    }
+
+    /* price */
+
+    .price .title h2::before{
+        right: 290px;
+    }
+
+    /* review */
+
+    .review .title h2::before{
+        right: 290px;
+    }
+
+    /* blog */
+
+    .blog .title h2::before{
+        right: 290px;
+    }
+    .blog .row .w-3:nth-of-type(2){
+        margin-top: 30px;
+    }
+    .blog .row .w-3:nth-of-type(3){
+        margin-top: 30px;
+    }
+
+    /* contact */
+
+    .contact .title h2::before{
+        right: 290px;
+    }
+    .contact .contact-form{
+        margin-left: 135px;
+    }
+    .contact .contact-form .contact-card{
+        left: -130px;
+    }
+
+    /* footer */
+
+    .footer .links{
+        margin-left: 0;
+    }
+    .footer .location{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .footer .newsletter{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .footer .newsletter form .input-box i{
+        font-size: 17px;
+        margin-top: 0.5px;
+    }
+    .footer .newsletter form .input-box input::placeholder{
+        font-size: 15px;
+    }
+    .footer .newsletter form .input-box input{
+        /* padding: 10px 8px; */
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+}
+
+
+/* sm */
+
+@media(max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    .w-sm-1{
+        width: 100%;
+    }
+    .text-sm-center{
+        text-align: center;
+    }
+
+    /* banner */
+
+    .banner .container .banner-cantent{
+        padding: 140px 20px;
+    }
+    .banner .banner-bg-1 .container .banner-cantent p{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .banner .banner-bg-1 .container .banner-cantent h2{
+        font-size: 40px;
+        max-width: 550px;
+        margin-bottom: 30px;
+    }
+    .banner .banner-bg-1 .container .banner-cantent h2::after{
+        display: none;
+    }
+    .banner .banner-bg-1 .container .banner-cantent .btn a{
+        font-size: 13px;
+        padding: 12px 22px;
+    }
+    .banner .banner-bg-2 .container .banner-cantent p{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .banner .banner-bg-2 .container .banner-cantent h2{
+        font-size: 40px;
+        max-width: 550px;
+        margin-bottom: 30px;
+    }
+    .banner .banner-bg-2 .container .banner-cantent h2::after{
+        display: none;
+    }
+    .banner .banner-bg-2 .container .banner-cantent .btn a{
+        font-size: 13px;
+        padding: 12px 22px;
+    }
+
+    /* service */
+
+    .service .title h2::before{
+        right: 200px;
+    }
+    .service .row .w-3:nth-of-type(1){
+        margin-bottom: 30px;
+    }
+
+    /* counter */
+
+    .counter .counter-card .card{
+        padding: 30px 150px;
+    }
+
+    /* team  */
+
+    .team .title h2::before{
+        right: 200px;
+    }
+
+    /* price */
+
+    .price .title h2::before{
+        right: 200px;
+    }
+
+    /* review */
+
+    .review .title h2::before{
+        right: 200px;
+    }
+
+    /* blog */
+
+    .blog .title h2::before{
+        right: 200px;
+    }
+
+    /* contact */
+
+    .contact .title h2::before{
+        right: 200px;
+    }
+    .contact .contact-form{
+        width: 95%;
+        margin-left: 12px;
+    }
+    .contact .contact-form .form-title{
+        margin-left: 0;
+    }
+    .contact .contact-form form{
+        margin-left: 0;
+    }
+    .contact .contact-form .contact-card{
+        display: none;
+    }
+
+}
+
+
+/* xs */
+
+@media(max-width:575px){
+    .container{
+        max-width: 100%;
+    }
+    .w-xs-1{
+        width: 100%;
+    }
+
+    /* service */
+
+    .service .title{
+        padding: 0 12px;
+    }
+    .service .card{
+        margin: 0 12px;
+    }
+    .service .up-icon a{
+        display: none;
+    }
+
+    /* about */
+
+    .about{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .about .img img{
+        width: 95%;
+    }
+    .about .img2 img{
+        width: 95%;
+        transform: translate(10px, 100px);
+    }
+
+    /* price */
+
+    .price{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* review */
+
+    .review{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* footer */
+
+    .footer .logo{
+        padding: 0 30px;
+    }
+    .footer .links{
+        padding: 0 30px;
+        margin-top: 40px;
+    }
+    .footer .location{
+        padding: 0 30px;
+    }
+    .footer .newsletter{
+        padding: 0 30px;
+    }
+
+}

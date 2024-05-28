@@ -1,0 +1,1293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: rgb(29 44 56);
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.w-7{
+    width: 70%;
+}
+.w-40{
+    width: 40%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+.justify-bitween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(29 44 56);
+}
+p{
+    color: rgb(62 62 62);
+}
+.text-center{
+    text-align: center;
+}
+span{
+    color: rgb(15 97 239);
+}
+
+.loder-bg .loder{
+    background: white;
+    background-image: url(../images/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+
+/* header */
+
+header{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar{
+    padding: 15px 0;
+}
+header .navbar .logo{
+    line-height: 25px;
+    color: white;
+    margin-top: 8px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    font-family: 'Philosopher', sans-serif;
+}
+header .navbar .logo .icon img{
+    width: 50px;
+    background: rgb(15 97 239);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+header .navbar .logo .name h1{
+    font-size: 28px;
+}
+header .navbar .logo .name p{
+    font-size: 16px;
+    margin: 0 20px;
+    color: white;
+}
+header .navbar nav ul li{
+    list-style: none;
+    position: relative;
+}
+header .navbar nav ul li a{
+    font-size: 17px;
+    margin: 0 25px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar nav ul li a:hover{
+    color: rgb(15 97 239);
+}
+header .navbar nav ul li a.active{
+    color: rgb(15 97 239);
+}
+header .navbar nav ul li:nth-last-of-type(1) a{
+    cursor: pointer;
+    position: relative;
+}
+header .navbar nav ul li ul{
+    background: rgb(243, 243, 243);
+    padding: 10px 0;
+    width: 150px;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    border-radius: 5px;
+    display: none;
+}
+#dropdown-menu.show-dropdown{
+    display: block;
+}
+header .navbar nav ul li:nth-last-of-type(1) ul li{
+    padding: 10px 0;
+}
+header .navbar nav ul li:nth-last-of-type(1) ul li a{
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar nav ul li:nth-last-of-type(1) ul li a:hover{
+    color: rgb(15 97 239);
+}
+header .navbar nav ul li:nth-last-of-type(1) ul li a.active{
+    color: rgb(15 97 239);
+}
+header .navbar .toggle{
+    padding: 5px 12px;
+    font-size: 22px;
+    background-color: white;
+    color: rgb(15 97 239);
+    border: 2px solid rgb(15 97 239);
+    border-radius: 5px;
+    display: none;
+}
+
+header .navbar .darkbtn{
+    position: relative;
+}
+header .navbar .darkbtn .sun{
+    color: white;   
+    font-size: 22px;
+    position: absolute;
+    top: 11px;
+    left: 6px;
+}
+header .navbar .darkbtn .moon{
+    color: rgb(39, 39, 39);   
+    font-size: 30px;
+    position: absolute;
+    top: 7px;
+    left: 31px;
+    display: none;
+}
+header .navbar .darkbtn .checkbox{
+    width: 60px;
+    height: 35px;
+    margin-top: 5px;
+    background-color: white;
+    appearance: none;
+    border-radius: 150px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s all ease-in-out;
+}
+header .navbar .darkbtn .checkbox::before{
+    content: '';
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: rgb(48, 51, 187);
+    transition: all 0.5s ease-in-out;
+}
+header .navbar .checkbox:checked{
+    background: rgb(48, 51, 187);
+    transition: all 0.5s ease-in-out;
+}
+header .navbar .darkbtn .checkbox:checked~.sun{
+    display: none;
+}
+header .navbar .darkbtn .checkbox:checked~.moon{
+    display: block;
+}
+header .navbar .checkbox:checked::before{
+    left: 27px;
+    background: white;
+}
+
+
+.fixed{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 20px -5px black;
+    z-index: 999;
+}
+header.fixed .navbar .logo{
+    color: black;
+}
+header.fixed .navbar .logo p{
+    color: black;
+}
+header.fixed .navbar nav ul li a{
+    color: black;
+}   
+header.fixed .navbar nav ul li a:hover{
+    color: rgb(15 97 239);
+}
+header.fixed .navbar nav ul li a.active{
+    color: rgb(15 97 239);
+}
+header.fixed .navbar .checkbox{
+    background: rgb(211, 211, 211);
+}
+header.fixed .navbar .checkbox:checked{
+    background: rgb(48, 51, 187);
+}
+
+/* darkmode */
+
+.dark-mode{
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode header.fixed{
+    background: rgb(51 51 51);
+}
+.dark-mode header.fixed .navbar .logo{
+    color: white;
+}
+.dark-mode header.fixed .navbar .logo p{
+    color: white;
+}
+.dark-mode header.fixed .navbar nav ul li a{
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode header.fixed .navbar nav ul li a.active{
+    color: rgb(15 97 239);
+}
+.dark-mode header.fixed .navbar nav ul li a:hover{
+    color: rgb(15 97 239);
+}
+
+.dark-mode header .navbar nav ul li ul{
+    background: black;
+}
+.dark-mode header .navbar nav ul li:nth-last-of-type(1) ul li a{
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode header .navbar nav ul li:nth-last-of-type(1) ul li a:hover{
+    color: rgb(15 97 239);
+}
+.dark-mode header .navbar nav ul li:nth-last-of-type(1) ul li a.active{
+    color: rgb(15 97 239);
+}
+
+.dark-mode header.fixed .navbar .darkbtn .moon{
+    top: 6px;
+}
+
+.dark-mode .about{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .about .title h2{
+    color: white;
+}
+.dark-mode .about .about-cantent p{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .services{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .services .title h4{
+    background: rgb(18 18 18);
+}
+.dark-mode .services .title h2{
+    color: white;
+}
+.dark-mode .services .service-card .card{
+    background: rgb(51 51 51);
+}
+.dark-mode .services .service-card .card .image img{
+    filter: brightness(0) invert(1);
+}
+.dark-mode .services .service-card .card .image h2{
+    color: white;
+}
+.dark-mode .services .service-card .card .card-body p{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .gallary{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .gallary .title h4{
+    background: rgb(51 51 51);
+}
+.dark-mode .gallary .title h2{
+    color: white;
+}
+
+.dark-mode .bgvideo .box{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+
+.dark-mode .doctors{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .doctors .title h4{
+    background: rgb(18 18 18);
+}
+.dark-mode .doctors .title h2{
+    color: white;
+}
+.dark-mode .doctors .doctors-content .swiper-slide .card .body{
+    background: rgb(51 51 51);
+}
+.dark-mode .doctors .doctors-content .swiper-slide .card .body h3{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.dark-mode .doctors .doctors-content .swiper-slide .card .body p{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.dark-mode .doctors .doctors-content .swiper-slide .card:hover .body h3{
+    color: black;
+}
+.dark-mode .doctors .doctors-content .swiper-slide .card:hover .body p{
+    color: black;
+}
+
+.dark-mode .contact{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .contact .title h4{
+    background: rgb(51 51 51);
+}
+.dark-mode .contact .title h2{
+    color: white;
+}
+.dark-mode .contact .contact-contant .contact-form{
+    background: rgb(18 18 18);
+    border: 1px solid white;
+}
+.dark-mode .contact .contact-contant .contact-form .form-title h2{
+    color: white;
+}
+.dark-mode .contact .contact-form form .input-box input{
+    background: rgb(51 51 51);
+    color: rgb(230 230 230);
+    border: 1px solid rgb(230 230 230);
+}
+.dark-mode .contact .contact-form form .input-box input::placeholder{
+    color: rgb(230 230 230);
+}
+.dark-mode .contact .contact-form form .input-box textarea{
+    background: rgb(51 51 51);
+    color: rgb(230 230 230);
+    border: 1px solid rgb(230 230 230);
+}
+.dark-mode .contact .contact-form form .input-box textarea::placeholder{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .footer{
+    background: rgb(18 18 18);
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode .footer .logo{
+    color: white;
+}
+.dark-mode .footer .logo .logo-name p{
+    color: white;
+}
+.dark-mode .footer .logo-content p{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .logo .icon a i{
+    border: 1px solid rgb(15 97 239);
+}
+
+.dark-mode .footer .links h2{
+    color: white;
+}
+.dark-mode .footer .links .menu ul li a{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .links .menu ul li i{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .footer .department h2{
+    color: white;
+}
+.dark-mode .footer .department .menu ul li{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .department .menu ul li i{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .footer .location h2{
+    color: white;
+}
+.dark-mode .footer .menu .icon i{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .menu .icon p{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .menu .icon a{
+    color: rgb(230 230 230);
+}
+
+.dark-mode footer hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.295);
+}
+
+.dark-mode .footer .copyright{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .copyright a{
+    color: rgb(230 230 230);
+}
+
+/* banner */
+
+.banner .swiper .swiper-wrapper .banner-bg-1{
+    background: url(../images/banner-img1.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 210px 110px;
+}
+.banner .swiper .swiper-wrapper .banner-bg-2{
+    background: url(../images/banner-img2.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 210px 110px;
+}
+.banner .swiper .swiper-wrapper .banner-bg-3{
+    background: url(../images/banner-img3.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 210px 110px;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 80px;
+    line-height: 60px;
+    max-width: 800px;
+    font-weight: 600;
+    opacity: 0;
+    animation-fill-mode: both;
+    animation-name: slideup;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h3{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 80px;
+    max-width: 700px;
+    font-family: "Mirza", serif;
+    font-weight: 600;
+    opacity: 0;
+    animation-name: slideup;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent p{
+    color: white;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    font-size: 18px;
+    max-width: 700px;
+    opacity: 0;
+    animation-name: slideleft;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn{
+    margin: 45px 0;
+    opacity: 0;
+    animation-name: slidedown;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn a{
+    background-color: rgb(15 97 239);
+    padding: 12px 30px;
+    border: 1px solid rgb(15 97 239);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn:hover a{
+    color: white;
+}
+.swiper-pagination{
+    margin: 10px 0;
+}
+.swiper-pagination-bullet{
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+    background: white;
+}
+@keyframes slideup{
+    0%{
+        filter: blur(0);
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+@keyframes slidedown{
+    0%{
+        filter: blur(0);
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+@keyframes slideleft{
+    0%{
+        filter: blur(0);
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+/* about */
+
+.about{
+    padding: 100px;
+}
+.about .image{
+    margin: 5px 10px;
+}
+.about .image img{
+    width: 100%;
+    border-radius: 40px;
+}
+.about .image-3 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 10px;
+}
+.about .title{
+    padding: 40px 50px;
+    padding-right: 0;
+}
+.about .title h4{
+    font-size: 20px;
+    color: rgb(15 97 239);
+    letter-spacing: 2px;
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+}
+.about .title h4::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    top: 5px;
+    left: 120px;
+    background: rgb(15 97 239);
+}
+.about .title h4::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    top: 15px;
+    left: 120px;
+    background: rgb(15 97 239);
+}
+.about .title h2{
+    font-size: 50px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.about .about-cantent{
+    padding-left: 50px;
+}
+.about .about-cantent p{
+    font-size: 18px;
+    line-height: 35px;
+    color: rgb(62 62 62);
+    margin-bottom: 40px;
+}
+
+.about .up-icon a{
+    color: white;
+    padding: 13px 20px;
+    background: rgb(64, 132, 248);
+    border-radius: 50%;
+    font-size: 22px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+.about .up-icon a:hover{
+    background-color: rgb(15 97 239);
+}
+
+/* services */
+
+.services{
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+.services .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(15 97 239);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.services .title h4::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    top: 5px;
+    left: -35px;
+    background: rgb(15, 97, 239);
+    z-index: -1;
+}
+.services .title h4::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    top: 15px;
+    left: -60px;
+    background: rgb(15 97 239);
+    z-index: -1;
+}
+.services .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.services .service-card{
+    margin: 0 20px;
+}
+.services .service-card .card{
+    width: 100%;
+    background: rgba(223, 235, 255, 0.685);
+    border-radius: 5px;
+    padding: 30px 40px;
+    margin-top: 70px;
+}
+.services .w-3:nth-of-type(4) .service-card .card{
+    margin-top: 20px;
+}
+.services .w-3:nth-of-type(5) .service-card .card{
+    margin-top: 20px;
+}
+.services .w-3:nth-of-type(6) .service-card .card{
+    margin-top: 20px;
+}
+.services .service-card .card .image img{
+    width: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.services .service-card .card .image h2{
+    font-size: 23px;
+    color: rgb(29 44 56);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-family: 'Philosopher', sans-serif;
+}
+.services .service-card .card .card-body p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* gallary */
+
+.gallary{
+    padding-top: 30px;
+}
+.gallary .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(15 97 239);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+.gallary .title h4::before{
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 2px;
+    top: 5px;
+    left: -43px;
+    background: rgb(15 97 239);
+    z-index: -1;
+}
+.gallary .title h4::after{
+    content: '';
+    position: absolute;
+    width: 287px;
+    height: 2px;
+    top: 15px;
+    left: -68px;
+    background: rgb(15 97 239);
+    z-index: -1;
+}
+.gallary .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.gallary .gallary-contant{
+    padding: 100px 0;
+}
+.gallary .gallary-contant .image-1{
+    padding: 0 10px;
+}
+.gallary .gallary-contant .image-1 img{
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.gallary .gallary-contant .image-2{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.gallary .gallary-contant .image-2 img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.gallary .gallary-contant .image-3{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.gallary .gallary-contant .image-3 img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.gallary .gallary-contant .image-4{
+    padding: 0 10px;
+}
+.gallary .gallary-contant .image-4 img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.gallary .gallary-contant .image-5{
+    padding: 0 10px;
+}
+.gallary .gallary-contant .image-5 img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.gallary .gallary-contant .image-6{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.gallary .gallary-contant .image-6 img{
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* bgvideo */
+
+.bgvideo .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bgvideo .box .bagroundvideo{
+    width: 100%;
+    height: 100%;
+}
+.bgvideo .box::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -8px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+.bgvideo .bgvideo-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -56%);
+}
+.bgvideo .bgvideo-title h2{
+    color: white;
+    max-width: 700px;
+    letter-spacing: 2px;
+    line-height: 120px;
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.bgvideo .bgvideo-title .btn a{
+    padding: 15px 50px;
+    background: rgb(15 97 239);
+    border: 1px solid rgb(15 97 239);
+    color: white;
+    letter-spacing: 1px;
+    transition: all  0.3s ease-in-out;
+}
+.bgvideo .bgvideo-title .btn a:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+
+/* doctors */
+
+.doctors{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.doctors .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(15 97 239);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.doctors .title h4::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    top: 5px;
+    left: -35px;
+    background: rgb(15 97 239);
+    z-index: -1;
+}
+.doctors .title h4::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    top: 15px;
+    left: -60px;
+    background: rgb(15 97 239);
+    z-index: -1;
+}
+.doctors .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.doctors .doctors-content .swiper-slide{
+    margin: 100px 0;
+    padding: 0 10px;
+}
+.doctors .doctors-content .swiper-slide .card{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+.doctors .doctors-content .swiper-slide .card .image{
+    overflow: hidden;
+}
+.doctors .doctors-content .swiper-slide .card:hover .image img{
+    transform: scale(1.03);
+}
+.doctors .doctors-content .swiper-slide .card .image img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.4s ease-in-out;
+}
+.doctors .doctors-content .swiper-slide .card .body{
+    padding: 20px 30px;
+    line-height: 30px;
+    position: absolute;
+    background: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+.doctors .doctors-content .swiper-slide .card .body h3{
+    font-size: 37px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Mirza", serif;
+}
+.doctors .doctors-content .swiper-slide .card .body p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+.doctors .doctors-content .swiper-slide .card:hover .body{
+    background: rgb(15 97 239);
+}
+.doctors .doctors-content .swiper-slide .card:hover .body h3{
+    color: white;
+}
+.doctors .doctors-content .swiper-slide .card:hover .body p{
+    color: white;
+}
+
+/* contact */
+
+.contact{
+    padding-top: 30px;
+    padding-bottom: 110px;
+}
+.contact .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(15 97 239);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 165px;
+    margin: 0 auto;
+    position: relative;
+}
+.contact .title h4::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 5px;
+    left: -43px;
+    background: rgb(15 97 239);
+    z-index: -1;
+}
+.contact .title h4::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    top: 15px;
+    left: -68px;
+    background: rgb(15 97 239);
+    z-index: -1;
+}
+.contact .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.contact .contact-contant{
+    margin-top: 90px;
+}
+.contact .contact-contant .image img{
+    width: 95%;
+    height: 650px;
+    transform: translate(0, -20px);
+    padding: 0 30px;
+}
+.contact .contact-contant .contact-form{
+    width: 50%;
+    padding: 20px 40px;
+    border: 1px solid rgb(15 97 239);
+    border-radius: 10px;
+}
+.contact .contact-contant .contact-form .form-title h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.contact .contact-form form .input-box input{
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 20px;
+    color: rgb(15 97 239);
+    border: 1px solid rgb(15 97 239);
+    box-shadow: 10px 10px 10px -12px rgba(0, 0, 0, 0.37);
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+.contact .contact-form form .input-box input::placeholder{
+    font-size: 18px;
+}
+.contact .contact-form form .input-box textarea{
+    width: 100%;
+    height: 120px;
+    margin: 15px 0;
+    padding: 20px;
+    color: rgb(15 97 239);
+    border: 1px solid rgb(15 97 239);
+    font-size: 18px;
+    box-shadow: 10px 10px 10px -12px rgba(0, 0, 0, 0.37);
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+.contact .contact-form form .input-box textarea::placeholder{
+    font-size: 18px;
+}
+.contact .contact-form form .btn input[type=submit]{
+    padding: 15px 40px;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    background: rgb(15 97 239);
+    border: 1px solid rgb(15 97 239);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.contact .contact-form form .btn input[type=submit]:hover{
+    background: transparent;
+    color: rgb(15 97 239); 
+}
+
+/* footer */
+
+.footer{
+    background: rgb(236, 243, 255);
+    padding-top: 60px;
+}
+.footer .logo{
+    line-height: 25px;
+    color: black;
+    margin-top: 8px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    font-family: 'Philosopher', sans-serif;
+}
+.footer .logo .footer-logo img{
+    width: 50px;
+    background: rgb(15 97 239);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.footer .logo .logo-name h1{
+    font-size: 28px;
+}
+.footer .logo .logo-name p{
+    font-size: 16px;
+    margin: 0 20px;
+    color: black;
+}
+.footer .logo-content p{
+    margin-top: 28px;
+    line-height: 25px;
+    max-width: 250px;
+} 
+.footer .logo-content .icon a i{
+    margin-top: 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+    color: white;
+    padding: 13px;
+    background: rgb(15 97 239);
+    border: 1px solid rgb(15 97 239);
+    transition: all 0.3s ease-in-out;
+}
+.footer .logo-content .icon a:nth-of-type(1) i{
+    padding: 13px 16.5px;
+}
+.footer .logo-content .icon a:nth-of-type(3) i{
+    padding: 13px 14px;
+}
+.footer .logo-content .icon a:nth-of-type(4) i{
+    padding: 13px 15px;
+}
+.footer .logo-content .icon a:hover i{
+    background: white;
+    color: rgb(15 97 239);
+}
+
+.footer .links{
+    padding: 0 10px;
+    margin-left: 10px;
+}
+.footer .links h2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+.footer .links .menu ul{
+    margin-top: 40px;
+}
+.footer .links .menu ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition:  all 0.3s ease-in-out;
+}
+.footer .links .menu ul li:hover{
+    margin-left: 8px;
+}
+.footer .links .menu ul li i{
+    color: rgb(62 62 62);  
+}
+.footer .links .menu ul li a{
+    margin-left: 8px;
+    color: rgb(62 62 62);   
+}
+
+.footer .department{
+    margin-left: 20px;
+}
+.footer .department h2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer .department .menu ul{
+    margin-top: 40px;
+}
+.footer .department .menu ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition:  all 0.3s ease-in-out;
+}
+.footer .department .menu ul li:hover{
+    margin-left: 8px;
+}
+.footer .department .menu ul li i{
+    color: rgb(62 62 62); 
+    margin-right: 8px; 
+}
+.footer .department .menu ul li{
+    color: rgb(62 62 62);   
+}
+
+.footer .location{
+    padding: 0 50px;
+}
+.footer .location h2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+.footer .menu{
+    margin-top: 40px;
+}
+.footer .menu .icon{
+    margin-bottom: 30px;
+}
+.footer .menu .icon p{
+    margin-left: 20px;
+}
+.footer .menu .icon a{
+    margin-left: 20px;
+}
+
+
+.footer hr{
+    margin-top: 40px;
+    border-top: 1px solid rgb(15 97 239);
+    opacity: 0.5;
+}
+
+.footer .copyright{
+    padding: 30px;
+    text-align: center;
+    color: rgb(62 62 62);
+}
+.footer .copyright a{
+    margin-left: 2px;
+    color: rgb(62 62 62);
+    transition: all 0.3s ease-in-out;
+}
+.footer .copyright a:hover{
+    color: rgb(15 97 239);
+}

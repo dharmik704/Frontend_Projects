@@ -1,0 +1,1898 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: rgb(29 44 56);
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.w-7{
+    width: 70%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+.justify-bitween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(29 44 56);
+}
+p{
+    color: rgb(62 62 62);
+}
+.text-center{
+    text-align: center;
+}
+span{
+    color: rgb(255, 126, 126);
+}
+
+/* header */
+
+header{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar{
+    padding: 15px 0;
+}
+header .navbar .logo{
+    line-height: 28px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    font-family: 'Philosopher', sans-serif;
+}
+header .navbar .logo p{
+    font-size: 18px;
+    margin: 0 43px;
+    color: white;
+}
+header .navbar nav ul li{
+    list-style: none;
+    position: relative;
+}
+header .navbar nav ul li a{
+    font-size: 17px;
+    margin: 0 25px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar nav ul li a:hover{
+    color: rgb(255, 126, 126);
+}
+header .navbar nav ul li a.active{
+    color: rgb(255, 126, 126);
+}
+header .navbar .btn{
+    background-color: rgb(255, 126, 126);
+    padding: 8px 50px;
+    border: 1px solid rgb(255, 126, 126);
+    cursor: pointer;
+    margin-left: 100px;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar .btn a{
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+header .navbar .btn:hover{
+    background-color: transparent;
+    border: 1px solid rgb(255, 126, 126);
+}
+header .navbar .btn:hover a{
+    color: rgb(255, 126, 126);
+}
+header .navbar .toggle{
+    padding: 5px 12px;
+    font-size: 22px;
+    background-color: white;
+    color: rgb(255, 126, 126);
+    border: 2px solid rgb(255, 126, 126);
+    border-radius: 5px;
+    display: none;
+}
+
+header .navbar .darkbtn{
+    position: relative;
+}
+header .navbar .darkbtn .sun{
+    color: white;   
+    font-size: 22px;
+    position: absolute;
+    top: 11px;
+    left: 6px;
+}
+header .navbar .darkbtn .moon{
+    color: rgb(39, 39, 39);   
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    left: 31px;
+    display: none;
+}
+header .navbar .darkbtn .checkbox{
+    width: 60px;
+    height: 35px;
+    margin-top: 5px;
+    background-color: white;
+    appearance: none;
+    border-radius: 150px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s all ease-in-out;
+}
+header .navbar .darkbtn .checkbox::before{
+    content: '';
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: rgb(48, 51, 187);
+    transition: all 0.5s ease-in-out;
+}
+header .navbar .checkbox:checked{
+    background: rgb(48, 51, 187);
+    transition: all 0.5s ease-in-out;
+}
+header .navbar .darkbtn .checkbox:checked~.sun{
+    display: none;
+}
+header .navbar .darkbtn .checkbox:checked~.moon{
+    display: block;
+}
+header .navbar .checkbox:checked::before{
+    left: 27px;
+    background: white;
+}
+
+
+.fixed{
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 20px -5px black;
+    z-index: 999;
+}
+header.fixed .navbar .logo{
+    color: black;
+}
+header.fixed .navbar .logo p{
+    color: black;
+}
+header.fixed .navbar nav ul li a{
+    color: black;
+}
+header.fixed .navbar nav ul li a:hover{
+    color: rgb(255, 126, 126);
+}
+header.fixed .navbar nav ul li a.active{
+    color: rgb(255, 126, 126);
+}
+header.fixed .navbar .checkbox{
+    background: rgb(211, 211, 211);
+}
+header.fixed .navbar .checkbox:checked{
+    background: rgb(48, 51, 187);
+}
+
+/* darkmode */
+
+.dark-mode{
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode header.fixed{
+    background: rgb(51 51 51);
+}
+.dark-mode header.fixed .navbar .logo{
+    color: white;
+}
+.dark-mode header.fixed .navbar .logo p{
+    color: white;
+}
+.dark-mode header.fixed .navbar nav ul li a{
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode header.fixed .navbar nav ul li a.active{
+    color: rgb(255, 126, 126);
+}
+.dark-mode header.fixed .navbar nav ul li a:hover{
+    color: rgb(255, 126, 126);
+}
+.dark-mode header.fixed .navbar .darkbtn .moon{
+    top: 6px;
+}
+
+.dark-mode .chack-availability{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .chack-availability form .form-box{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+
+.dark-mode .about{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .about .title h2{
+    color: white;
+}
+.dark-mode .about .about-cantent p{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .activity{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .activity .title h4{
+    background: rgb(51 51 51);
+}
+.dark-mode .activity .title h2{
+    color: white;
+}
+
+.dark-mode .services{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .services .title h4{
+    background: rgb(18 18 18);
+}
+.dark-mode .services .title h2{
+    color: white;
+}
+.dark-mode .services .service-card .card .image img{
+    filter: brightness(0) invert(1);
+}
+.dark-mode .services .service-card .card .card-body h2{
+    color: white;
+}
+.dark-mode .services .service-card .card .card-body p{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .destination{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .destination .title h4{
+    background: rgb(51 51 51);
+}
+.dark-mode .destination .title h2{
+    color: white;
+}
+.dark-mode .destination .destination-contant .card .image h4{
+    background: rgb(18 18 18);
+}
+.dark-mode .destination .destination-contant .card .image h5{
+    background: rgb(18 18 18);
+}
+.dark-mode .destination .destination-contant .card-2 .image h4{
+    background: rgb(18 18 18);
+}
+.dark-mode .destination .destination-contant .card-2 .image h5{
+    background: rgb(18 18 18);
+}
+
+.dark-mode .package{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .package .title h4{
+    background: rgb(18 18 18);
+}
+.dark-mode .package .title h2{
+    color: white;
+}
+.dark-mode .package .package-content .swiper-slide .card{
+    background: rgb(51 51 51);
+}
+.dark-mode .package .package-content .swiper-slide .card .icon p{
+    color: rgb(230 230 230);
+}
+.dark-mode .package .package-content .swiper-slide .card .tour-info ul li{
+    color: rgb(230 230 230);
+}
+.dark-mode .package .package-content .swiper-slide .card .tour-info ul li i{
+    background: rgb(230 230 230);
+}
+.dark-mode .package .package-content .swiper-slide .card .tour-info h4{
+    color: rgb(230 230 230);
+}
+.dark-mode .package .package-content .swiper-slide .card .tour-info .price{
+    border-left: 1px solid rgba(230, 230, 230, 0.459);
+}
+
+.dark-mode .bgvideo .box{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+
+.dark-mode .review{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .review .title h4{
+    background: rgb(51 51 51);
+}
+.dark-mode .review .title h2{
+    color: white;
+}
+.dark-mode .review .swiper-slide-active .review-card .name h2{
+    color: white;
+}
+.dark-mode .review .swiper-slide-active .review-card .card-body p{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .blog{
+    background: rgb(18 18 18);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .blog .title h4{
+    background: rgb(18 18 18);
+}
+.dark-mode .blog .title h2{
+    color: white;
+}
+.dark-mode .blog .blog-content .blog-card .card{
+    background: rgb(51 51 51);
+}
+.dark-mode .blog .blog-content .blog-card .card .card-body .icon i{
+    color: white;
+    background: rgb(18 18 18);
+}
+.dark-mode .blog .blog-content .blog-card .card .card-body .icon p{
+    color: rgb(230 230 230);
+}
+.dark-mode .blog .blog-content .blog-card .card .card-body h3 a{
+    color: white;
+}
+.dark-mode .blog .blog-content .blog-card .card .card-body p{
+    color: rgb(230 230 230);
+}
+.dark-mode .blog .blog-content .blog-card .card .card-body .btn a{
+    color: white;
+}
+
+.dark-mode .contact{
+    background: rgb(51 51 51);
+    transition: 0.3s all ease-in-out;
+}
+.dark-mode .contact .title h4{
+    background: rgb(51 51 51);
+}
+.dark-mode .contact .title h2{
+    color: white;
+}
+.dark-mode .contact .contact-contant .contact-form{
+    background: rgb(18 18 18);
+    border: 1px solid white;
+    border-left: 0;
+}
+.dark-mode .contact .contact-contant .contact-form .form-title h2{
+    color: white;
+}
+.dark-mode .contact .contact-form form .input-box input{
+    background: rgb(51 51 51);
+    color: rgb(230 230 230);
+    border: 1px solid rgb(230 230 230);
+}
+.dark-mode .contact .contact-form form .input-box input::placeholder{
+    color: rgb(230 230 230);
+}
+.dark-mode .contact .contact-form form .input-box textarea{
+    background: rgb(51 51 51);
+    color: rgb(230 230 230);
+    border: 1px solid rgb(230 230 230);
+}
+.dark-mode .contact .contact-form form .input-box textarea::placeholder{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .footer{
+    background: rgb(18 18 18);
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode .footer .logo .footer-logo{
+    color: white;
+}
+.dark-mode .footer .logo .footer-logo p{
+    color: white;
+}
+.dark-mode .footer .logo p{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .logo .icon a i{
+    border: 1px solid rgb(255, 126, 126);
+}
+.dark-mode .footer .links h2{
+    color: white;
+}
+.dark-mode .footer .links .menu ul li a{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .links .menu ul li i{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .footer .location h2{
+    color: white;
+}
+.dark-mode .footer .menu .icon i{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .menu .icon p{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .menu .icon a{
+    color: rgb(230 230 230);
+}
+
+.dark-mode .footer .newsletter h2{
+    color: white;
+}
+.dark-mode .footer .newsletter p{
+    color: rgb(230 230 230);
+}
+
+.dark-mode footer hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.295);
+}
+
+.dark-mode .footer .copyright{
+    color: rgb(230 230 230);
+}
+.dark-mode .footer .copyright a{
+    color: rgb(230 230 230);
+}
+
+/* banner */
+
+.banner .swiper .swiper-wrapper .banner-bg-1{
+    background: url(../img/banner-bg1.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 180px 0;
+}
+.banner .swiper .swiper-wrapper .banner-bg-2{
+    background: url(../img/banner-bg2.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 180px 0;
+}
+.banner .swiper .swiper-wrapper .banner-bg-3{
+    background: url(../img/banner-bg3.jpg) rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 180px 0;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+    color: white;
+    font-size: 150px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 100;
+    font-family: "Protest Revolution", sans-serif;
+}
+.swiper-pagination{
+    margin: 30px 0;
+}
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background: white;
+}
+
+/* chack-availability */
+
+.chack-availability form .form-box{
+    background-color: white;
+    padding: 30px 40px;
+    width: 100%;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    transform: translate(0 , -30px);
+    z-index: 1;
+    position: relative;
+}
+.chack-availability form .form-box .card{
+    width: 235px;
+}
+.chack-availability form .form-box .card input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(255, 126, 126);
+    border-radius: 0;
+    font-size: 16px;
+    color: gray;
+    margin-left: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.chack-availability form .form-box .card input:focus{
+    color: gray;
+}
+.chack-availability form .form-box .card i{
+    color: gray;
+    transform: translate(-25px , 15px);
+    opacity: 0.5;
+    font-size: 14px;
+}
+.ui-datepicker .ui-datepicker-prev{
+    background: url(../image/pre-btn.png);
+    left: 0;
+    top: 2px;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-position: center center;
+    border: 0;
+    width: 20px;
+    height: 30px;
+    opacity: 0.5;
+}
+.ui-datepicker .ui-datepicker-next{
+    background: url(../image/next-btn.png);
+    right: 0;
+    top: 2px;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-position: center center;
+    border: 0;
+    width: 20px;
+    height: 30px;
+    opacity: 0.5;
+}
+.ui-datepicker-header{
+    background: 0 0;
+    border: 0;
+}
+.ui-datepicker-title{
+    color: #2a2a2a;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.ui-datepicker.ui-widget{
+    padding: 8px;
+    width: auto;
+}
+.ui-widget.ui-widget-content{
+    border: 1px solid #d3d3d3;
+    border-radius: 0;
+    margin-top: 5px;
+}
+.ui-datepicker.ui-widget .ui-datepicker-calendar{
+    border: 0;
+    margin-bottom: 24px;
+}
+.ui-datepicker.ui-widget .ui-datepicker-calendar th{
+    color: #999;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.ui-datepicker.ui-widget .ui-datepicker-calendar th span{
+    border-bottom: 1px dotted #999;
+}
+.ui-widget-content .ui-state-default{
+    border: 0;
+}
+.ui-datepicker-calendar .ui-state-default{
+    padding: 5px;
+    color: rgb(102 102 102);
+    font-size: 12px;
+    line-height: 17px;
+    text-align: right;
+    background: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+.ui-datepicker-calendar .ui-state-default:hover{
+    background: rgb(255, 126, 126);
+}
+.chack-availability form .form-box .card select{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(255, 126, 126);
+    border-radius: 0;
+    font-size: 16px;
+    color: gray;
+    margin-left: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.chack-availability form .form-box .card:nth-of-type(4){
+    margin-left: 15px
+}
+.chack-availability form .form-box .card input[type="button"]{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 0;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(255, 126, 126);
+    margin-left: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in-out;
+}
+.chack-availability form .form-box .card input[type="button"]:hover{
+    background-color: transparent;
+    color: rgb(255, 88, 88);
+}
+
+/* about */
+
+.about{
+    padding: 70px 0;
+}
+.about .image{
+    margin: 5px 10px;
+}
+.about .image img{
+    width: 100%;
+    border-radius: 40px;
+}
+.about .image-3 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 10px;
+}
+.about .title{
+    padding: 25px 50px;
+}
+.about .title h4{
+    font-size: 20px;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+}
+.about .title h4::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    top: 5px;
+    left: 120px;
+    background: rgb(255, 88, 88);
+}
+.about .title h4::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    top: 15px;
+    left: 120px;
+    background: rgb(255, 88, 88);
+}
+.about .title h2{
+    font-size: 50px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.about .about-cantent{
+    padding: 20px 50px;
+}
+.about .about-cantent p{
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(62 62 62);
+    margin-bottom: 40px;
+}
+.about .about-cantent .btn a{
+    padding: 12px 45px;
+    font-size: 17px;
+    background: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+.about .about-cantent .btn a:hover{
+    color: rgb(255, 88, 88);
+    background: transparent;
+    border: 1px solid rgb(255, 88, 88);
+}
+
+/* activity */
+
+.activity{
+    padding: 30px 0;
+}
+.activity .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.activity .title h4::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 5px;
+    left: -35px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.activity .title h4::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 15px;
+    left: -60px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.activity .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.activity .images{
+    padding: 70px 0;
+}
+.activity .images .card{
+    width: 95%;
+    margin: 10px;
+    height: 250px;
+    background: url(../img/activity-img1.jpg) rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 92px;
+}
+.activity .images .card .activity-name h2{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.activity .images .card-2{
+    width: 95%;
+    margin: 10px;
+    height: 250px;
+    background: url(../img/activity-img2.jpg) rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 92px;
+}
+.activity .images .card-2 .activity-name h2{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.activity .images .card-3{
+    width: 95%;
+    margin: 10px;
+    height: 250px;
+    background: url(../img/activity-img3.jpg) rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 92px;
+}
+.activity .images .card-3 .activity-name h2{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.activity .images .card-4{
+    width: 95%;
+    margin: 10px;
+    height: 250px;
+    background: url(../img/activity-img4.jpg) rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 92px;
+}
+.activity .images .card-4 .activity-name h2{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.activity .images .card-5{
+    width: 95%;
+    margin: 10px;
+    height: 250px;
+    background: url(../img/activity-img5.jpg) rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 92px;
+}
+.activity .images .card-5 .activity-name h2{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.activity .images .card-6{
+    width: 95%;
+    margin: 10px;
+    height: 250px;
+    background: url(../img/activity-img6.jpg) rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 92px;
+}
+.activity .images .card-6 .activity-name h2{
+    font-size: 40px;
+    line-height: 40px;
+    transform: translate(0, -10px);
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* services */
+
+.services{
+    padding: 30px 0;
+}
+.services .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.services .title h4::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 5px;
+    left: -35px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.services .title h4::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 15px;
+    left: -60px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.services .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.services .service-card{
+    margin: 0 10px;
+}
+.services .service-card .card{
+    width: 100%;
+    padding: 20px 40px;
+    margin: 70px 0;
+}
+.services .w-4:nth-of-type(1) .service-card .card .image img{
+    width: 90px;
+    margin-bottom: -10px
+}
+.services .w-4:nth-of-type(2) .service-card .card .image img{
+    width: 70px;
+    margin-bottom: 10px
+}
+.services .w-4:nth-of-type(3) .service-card .card .image img{
+    width: 70px;
+    margin-bottom: 10px
+}
+.services .w-4:nth-of-type(4) .service-card .card .image img{
+    width: 70px;
+    margin-bottom: 10px
+}
+.services .service-card .card .image img{
+    width: 70px;
+}
+.services .service-card .card .card-body h2{
+    font-size: 20px;
+    color: rgb(29 44 56);
+    margin-bottom: 10px;
+}
+
+/* destination */
+
+.destination{
+    padding-top: 30px;
+}
+.destination .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 165px;
+    margin: 0 auto;
+    position: relative;
+}
+.destination .title h4::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 5px;
+    left: -43px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.destination .title h4::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    top: 15px;
+    left: -68px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.destination .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.destination .destination-contant{
+    padding: 100px 0;
+}
+.destination .destination-contant .card{
+    width: 94%;
+    height: 550px;
+    margin: 0 13px;
+    overflow: hidden;
+    position: relative;
+}
+.destination .destination-contant .card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+.destination .destination-contant .card:hover .image img{
+    transform: scale(1.05);
+}
+.destination .destination-contant .card .image{
+    position: relative;
+}
+.destination .destination-contant .card .image img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.destination .destination-contant .card .image h4{
+    background: white;
+    color: rgb(252, 154, 26);
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+}
+.destination .destination-contant .card .image h5{
+    background: white;
+    color: rgb(255, 88, 88);
+    font-size: 20px;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    padding: 8px 10px;
+    z-index: 1;
+    letter-spacing: 1px;
+    font-family: 'Philosopher', sans-serif;
+}
+.destination .destination-contant .card-2{
+    width: 96%;
+    height: 350px;
+    margin: 25px 13px;
+    overflow: hidden;
+    position: relative;
+}
+.destination .destination-contant .card-2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+.destination .destination-contant .card-2:hover .image img{
+    transform: scale(1.05);
+}
+.destination .destination-contant .card-2 .image{
+    position: relative;
+}
+.destination .destination-contant .card-2 .image img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.destination .destination-contant .card-2 .image h4{
+    background: white;
+    color: rgb(252, 154, 26);
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+}
+.destination .destination-contant .card-2 .image h5{
+    background: white;
+    color: rgb(255, 88, 88);
+    font-size: 20px;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    padding: 8px 10px;
+    z-index: 1;
+    letter-spacing: 1px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+/* package */
+
+.package{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.package .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.package .title h4::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 5px;
+    left: -35px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.package .title h4::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 15px;
+    left: -60px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.package .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.package .package-content .swiper-slide{
+    margin: 100px 0;
+    padding: 0 10px;
+}
+.package .package-content .swiper-slide .card{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    cursor: default;
+}
+.package .package-content .swiper-slide .card:hover .image{
+    overflow: hidden;
+}
+.package .package-content .swiper-slide .card:hover .image img{
+    transform: scale(1.03);
+}
+.package .package-content .swiper-slide .card .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.3s ease-in-out;
+}
+.package .package-content .swiper-slide .card .body{
+    padding: 10px 30px;
+}
+.package .package-content .swiper-slide .card .body h3{
+    font-size: 30px;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: 'Philosopher', sans-serif;
+}
+.package .package-content .swiper-slide .card .icon i{
+    color: rgb(255, 159, 32);
+    margin: 0 2px;
+}
+.package .package-content .swiper-slide .card .icon p{
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+.package .package-content .swiper-slide .card .tour-info{
+    margin: 30px 0;
+}
+.package .package-content .swiper-slide .card .tour-info ul li i{
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 50%;
+    background: rgba(255, 230, 230, 0.74);
+    color: rgb(255, 88, 88);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.package .package-content .swiper-slide .card .tour-info ul li:nth-of-type(2) i{
+    padding: 8px 9.5px;
+    margin-bottom: 0;
+}
+.package .package-content .swiper-slide .card .tour-info .price{
+    border-left: 1px solid rgba(119, 119, 119, 0.219);
+    line-height: 30px;
+}
+.package .package-content .swiper-slide .card .tour-info .price h4{
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-left: 42px;
+}
+.package .package-content .swiper-slide .card .tour-info .price h2{
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 88, 88);
+}
+.package .package-content .swiper-slide .card .buttons{
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+.package .package-content .swiper-slide .card .buttons a{
+    padding: 10px 20px;
+    font-size: 17px;
+    background: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    color: white;
+    margin-right: 15px;
+    transition: 0.3s all ease-in-out;
+}
+.package .package-content .swiper-slide .card .buttons a:hover{
+    background-color: transparent;
+    border: 1px solid rgb(255, 88, 88);
+    color: rgb(255, 88, 88);
+}
+.package .package-content .swiper-slide .card .buttons a:nth-of-type(2){
+    background-color: transparent;
+    border: 1px solid rgb(255, 88, 88);
+    color: rgb(255, 88, 88);
+}
+.package .package-content .swiper-slide .card .buttons a:nth-of-type(2):hover{
+    background: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    color: white;
+}
+
+/* bgvideo */
+
+.bgvideo .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bgvideo .box .bagroundvideo{
+    width: 100%;
+    height: 100%;
+}
+.bgvideo .box::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -8px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+.bgvideo .bgvideo-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -56%);
+}
+.bgvideo .bgvideo-title h2{
+    color: white;
+    letter-spacing: 2px;
+    line-height: 100px;
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.bgvideo .bgvideo-title .btn a{
+    padding: 15px 50px;
+    background: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    color: white;
+    letter-spacing: 1px;
+    transition: all  0.3s ease-in-out;
+}
+.bgvideo .bgvideo-title .btn a:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+
+/* review */
+
+.review{
+    padding-top: 80px;
+    /* padding-bottom: 50px; */
+}
+.review .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 165px;
+    margin: 0 auto;
+    position: relative;
+}
+.review .title h4::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 5px;
+    left: -43px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.review .title h4::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    top: 15px;
+    left: -68px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.review .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.review .review-card{
+    margin-top: 70px;
+}
+.review .swiper-slide-prev .review-card{
+    opacity: 0.5;
+}
+.review .swiper-slide-next .review-card {
+    opacity: 0.5;
+}
+.review .review-card .name h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.review .swiper-slide-active .review-card .image img{
+    transform: scale(1.5);
+    border-radius: 50%;
+    border: 2px solid rgb(255, 88, 88);
+}
+.review .review-card .image img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 40px;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.review .swiper-slide .review-card .name{
+    opacity: 0;
+}
+.review .swiper-slide-active .review-card .name{
+    opacity: 1;
+}
+.review .swiper-slide .review-card .card-body{
+    display: none;
+}
+.review .swiper-slide-active .review-card .card-body{
+    display: block;
+}
+.review .review-card .card-body{
+    margin: 100px 0;
+}
+.review .review-card .card-body .rating i{
+    color: rgb(255, 127, 8);
+    font-size: 18px;
+}
+.review .review-card .card-body p{
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+/* blog */
+
+.blog{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.blog .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.blog .title h4::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 5px;
+    left: -35px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.blog .title h4::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 15px;
+    left: -60px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.blog .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.blog .blog-content{
+    margin: 90px 0;
+}
+.blog .blog-content .blog-card{
+    margin: 0 20px;
+}
+.blog .blog-content .blog-card .card{
+    width: 100%;
+    height: 100%;
+    background: rgba(248, 227, 227, 0.76);
+    box-shadow: 10px 10px 20px -12px rgba(0, 0, 0, 0.37);
+}
+.blog .blog-content .blog-card .card:hover .image img{
+    transform: scale(1.05);
+}
+.blog .blog-content .blog-card .card .image{
+    overflow: hidden;
+    position: relative;
+}
+.blog .blog-content .blog-card .card .image::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.blog .blog-content .blog-card .card:hover .image::after{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.blog .blog-content .blog-card .card .image img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.blog .blog-content .blog-card .card .card-body{
+    padding: 20px 22px;
+}
+.blog .blog-content .blog-card .card .card-body .icon i{
+    margin-right: 5px;
+    padding: 8px 9px;
+    font-size: 14px;
+    border-radius: 50%;
+    background: rgba(255, 172, 172, 0.637);
+    color: rgb(255, 88, 88);
+    margin-right: 10px;
+}
+.blog .blog-content .blog-card .card .card-body .icon i:nth-of-type(2){
+    margin-left: 20px;
+}
+.blog .blog-content .blog-card .card .card-body .icon p{
+    margin-right: 10px;
+    font-size: 15px;
+}
+.blog .blog-content .blog-card .card .card-body h3{
+    font-size: 22px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+.blog .blog-content .blog-card .card .card-body h3 a{
+    color: rgb(29 44 56);
+    transition: all 0.3s ease-in-out;
+}
+.blog .blog-content .blog-card .card .card-body h3 a:hover{
+    color: rgb(255, 88, 88);
+}
+.blog .blog-content .blog-card .card .card-body p{
+    line-height: 25px;
+    font-size: 16px;
+}
+.blog .blog-content .blog-card .card .card-body .btn a{
+    color: rgb(29 44 56);
+    margin-right: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.blog .blog-content .blog-card .card .card-body .btn a:hover{
+    color: rgb(255, 88, 88);
+}
+.blog .blog-content .blog-card .card .card-body .btn a i{
+    font-size: 13px;
+}
+
+/* contact */
+
+.contact{
+    padding-top: 30px;
+    padding-bottom: 110px;
+}
+.contact .title h4{
+    font-size: 20px;
+    background: white;
+    color: rgb(255, 88, 88);
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-family: 'Philosopher', sans-serif;
+    max-width: 165px;
+    margin: 0 auto;
+    position: relative;
+}
+.contact .title h4::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 5px;
+    left: -43px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.contact .title h4::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    top: 15px;
+    left: -68px;
+    background: rgb(255, 88, 88);
+    z-index: -1;
+}
+.contact .title h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: rgb(29 44 56);
+    font-family: 'Sansita', sans-serif;
+}
+.contact .contact-contant{
+    margin-top: 90px;
+}
+.contact .contact-contant .contact-info{
+    width: 100%;
+    height: 100%;
+    background: rgba(248, 227, 227, 0.76);
+    padding: 20px 40px;
+    border-radius: 10px 0 0 10px;
+}
+.contact .contact-contant .contact-info h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact .contact-contant .contact-info .icon:nth-of-type(1) i{
+    padding: 12px 14px;
+}
+.contact .contact-contant .contact-info .icon:nth-of-type(4) i{
+    padding: 12px;
+}
+.contact .contact-contant .contact-info .icon i{
+    padding: 12px;
+    font-size: 22px;
+    border-radius: 50%;
+    background: rgba(255, 172, 172, 0.637);
+    color: rgb(255, 88, 88);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.contact .contact-contant .contact-info .icon p{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.contact .contact-contant .contact-info .icon a{
+    color: rgb(29 44 56);
+    font-size: 17px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.contact .contact-contant .contact-info .icon a:hover{
+    color: rgb(255, 88, 88);
+}
+.contact .contact-contant .contact-info .map{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+}
+.contact .contact-contant .contact-form{
+    width: 66.67%;
+    padding: 20px 40px;
+    border: 1px solid rgb(255, 88, 88);
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.contact .contact-contant .contact-form .form-title h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.contact .contact-form form .input-box input{
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 20px;
+    color: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    box-shadow: 10px 10px 10px -12px rgba(0, 0, 0, 0.37);
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+.contact .contact-form form .input-box input::placeholder{
+    font-size: 18px;
+}
+.contact .contact-form form .input-box textarea{
+    width: 100%;
+    height: 120px;
+    margin: 15px 0;
+    padding: 20px;
+    color: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    font-size: 18px;
+    box-shadow: 10px 10px 10px -12px rgba(0, 0, 0, 0.37);
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+.contact .contact-form form .input-box textarea::placeholder{
+    font-size: 18px;
+}
+.contact .contact-form form .btn input[type=submit]{
+    padding: 15px 40px;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    background: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.contact .contact-form form .btn input[type=submit]:hover{
+    background: transparent;
+    color: rgb(255, 88, 88); 
+}
+
+/* footer */
+
+.footer{
+    background: rgb(255, 248, 248);
+    padding-top: 60px;
+}
+.footer .logo .footer-logo{
+    line-height: 28px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    font-family: 'Philosopher', sans-serif;
+}
+.footer .logo .footer-logo p{
+    font-size: 18px;
+    margin: 0 43px;
+}
+.footer .logo p{
+    margin-top: 28px;
+    line-height: 25px;
+    max-width: 250px;
+} 
+.footer .logo .icon a i{
+    margin-top: 15px;
+    border-radius: 50%;
+    margin-right: 8px;
+    color: white;
+    padding: 13px;
+    background: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    transition: all 0.3s ease-in-out;
+}
+.footer .logo .icon a:nth-of-type(1) i{
+    padding: 13px 16.5px;
+}
+.footer .logo .icon a:nth-of-type(3) i{
+    padding: 13px 14px;
+}
+.footer .logo .icon a:nth-of-type(4) i{
+    padding: 13px 15px;
+}
+.footer .logo .icon a:hover i{
+    background: white;
+    color: rgb(255, 88, 88);
+}
+
+.footer .links{
+    padding: 0 10px;
+    margin-left: 10px;
+}
+.footer .links h2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+.footer .links .menu ul{
+    margin-top: 40px;
+}
+.footer .links .menu ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition:  all 0.3s ease-in-out;
+}
+.footer .links .menu ul li:hover{
+    margin-left: 8px;
+}
+.footer .links .menu ul li i{
+    color: rgb(62 62 62);  
+}
+.footer .links .menu ul li a{
+    margin-left: 8px;
+    color: rgb(62 62 62);   
+}
+
+.footer .location{
+    padding: 0 50px;
+}
+.footer .location h2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+.footer .menu{
+    margin-top: 40px;
+}
+.footer .menu .icon{
+    margin-bottom: 30px;
+}
+.footer .menu .icon p{
+    margin-left: 20px;
+}
+.footer .menu .icon a{
+    margin-left: 20px;
+}
+
+.footer .newsletter{
+    padding: 0 20px;
+    margin-left: 20px;
+}
+.footer .newsletter h2{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer .newsletter p{
+    margin-bottom: 30px;
+}
+.footer .newsletter form .input-box{
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 224, 224, 0.733);
+    position: relative;
+    border: 1px solid rgba(255, 224, 224, 0.733);
+    margin: 30px 0;
+}
+.footer .newsletter form .input-box i{
+    padding: 15px 15px;
+    font-size: 18px;
+    margin-top: -2px;
+    color: rgb(29 44 56);
+}
+.footer .newsletter form .input-box input{
+    position: absolute;
+    background: transparent;
+    padding: 12.5px 10px;
+    margin-left: -15px;
+    border: 0;
+    outline: none;
+    color: rgb(29 44 56);
+    font-size: 17px;
+}
+.footer .newsletter form .input-box input::placeholder{
+    font-size: 15px;
+}
+.footer .newsletter form .input-box .submit-box{
+    width: 62px;
+    height: 48px;
+    background-color: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.footer .newsletter form .input-box .submit-box i{
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.footer .newsletter form .input-box .submit-box:hover{
+    background-color: white;
+    border: 1px solid rgb(255, 88, 88);
+}
+.footer .newsletter form .input-box .submit-box:hover i{
+    color: rgb(255, 88, 88);
+}
+
+.footer hr{
+    margin-top: 40px;
+    border-top: 1px solid rgb(255, 88, 88);
+    opacity: 0.5;
+}
+
+.footer .copyright{
+    padding: 30px;
+    text-align: center;
+    color: rgb(62 62 62);
+}
+.footer .copyright a{
+    margin-left: 2px;
+    color: rgb(62 62 62);
+    transition: all 0.3s ease-in-out;
+}
+.footer .copyright a:hover{
+    color: rgb(255, 88, 88);
+}

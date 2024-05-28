@@ -1,0 +1,1217 @@
+/* xl */
+
+@media(max-width:1399px){
+    .container{
+        max-width: 1140px;
+    }
+
+    /* header */
+
+    header .navbar .logo{
+        font-size: 15px;
+    }
+    header .navbar .logo p{
+        font-size: 16px;
+    }
+    header .navbar nav ul li a{
+        font-size: 15px;
+        margin: 0 20px;
+    }
+    header .navbar .btn{
+        padding: 7px 45px;
+        margin-left: 100px;
+        transition: all 0.3s ease-in-out;
+    }
+    header .navbar .btn a{
+        font-size: 15px;
+    }
+
+    /* banner */
+
+    .banner .swiper .swiper-wrapper .banner-bg-1{
+        padding: 120px 0;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-2{
+        padding: 120px 0;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-3{
+        padding: 120px 0;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+        font-size: 100px;
+        max-width: 600px;
+    }
+
+    /* chack-availability */
+
+    .chack-availability form .form-box{
+        padding: 20px 40px;
+    }
+    .chack-availability form .form-box .card input{
+        font-size: 15px;
+        height: 45px;
+    }
+    .chack-availability form .form-box .card select{
+        font-size: 15px;
+        height: 45px;
+    }
+    .chack-availability form .form-box .card input[type="button"]{
+        font-size: 12px;
+        height: 45px;
+    }
+
+    /* about */
+
+    .about .about-cantent p{
+        font-size: 15px;
+    }
+    .about .about-cantent .btn a{
+        font-size: 15px;
+    }
+
+    /* activity */
+
+    .activity .images .card{
+        height: 230px;
+    }
+    .activity .images .card .activity-name h2{
+        font-size: 33px;
+    }
+    .activity .images .card-2{
+        height: 230px;
+    }
+    .activity .images .card-2 .activity-name h2{
+        font-size: 33px;
+    }
+    .activity .images .card-3{
+        height: 230px;
+    }
+    .activity .images .card-3 .activity-name h2{
+        font-size: 33px;
+    }
+    .activity .images .card-4{
+        height: 230px;
+    }
+    .activity .images .card-4 .activity-name h2{
+        font-size: 33px;
+    }
+    .activity .images .card-5{
+        height: 230px;
+    }
+    .activity .images .card-5 .activity-name h2{
+        font-size: 33px;
+    }
+    .activity .images .card-6{
+        height: 230px;
+    }
+    .activity .images .card-6 .activity-name h2{
+        font-size: 33px;
+    } 
+
+    /* service */
+
+    .services .service-card .card{
+        padding: 20px 20px;
+    }
+
+    .services .service-card .card .card-body p{
+        font-size: 15px;
+    }
+
+    /* package */
+
+    .package .package-content .swiper-slide .card .body h3{
+        font-size: 25px;
+    }
+    .package .package-content .swiper-slide .card .icon p{
+        font-size: 14px;
+    }
+    .package .package-content .swiper-slide .card .tour-info ul li{
+        font-size: 14px;
+    }
+    .package .package-content .swiper-slide .card .tour-info ul li i{
+        font-size: 10px;
+    }
+    .package .package-content .swiper-slide .card .tour-info .price h4{
+        font-size: 18px;
+    }
+    .package .package-content .swiper-slide .card .tour-info .price h2{
+        font-size: 30px;
+    }
+    .package .package-content .swiper-slide .card .buttons a{
+        font-size: 15px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 70px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 14px 45px;
+        font-size: 14px;
+    }
+
+    /* review */
+
+    .review .review-card .card-body p{
+        font-size: 16px;
+    }
+
+    /* blog */
+
+    .blog .blog-content .blog-card .card .card-body .icon i{
+        font-size: 12px;
+        margin-right: 8px;
+    }
+    .blog .blog-content .blog-card .card .card-body .icon p{
+        font-size: 14px;
+        margin-right: 8px;
+    }
+    .blog .blog-content .blog-card .card .card-body h3 a{
+        font-size: 20px;
+    }
+    .blog .blog-content .blog-card .card .card-body p{
+        font-size: 15px;
+    }
+    .blog .blog-content .blog-card .card .card-body .btn a{
+        font-size: 15px;
+    }
+    .blog .blog-content .blog-card .card .card-body .btn a i{
+        font-size: 12px;
+    }
+
+    /* contact */
+
+    .contact .contact-contant .contact-info .icon i{
+        font-size: 20px;
+    }
+    .contact .contact-contant .contact-info .icon p{
+        font-size: 15px;
+    }
+    .contact .contact-contant .contact-info .icon a{
+        font-size: 15px;
+    }
+    .contact .contact-form form .input-box input{
+        font-size: 15px;
+    }
+    .contact .contact-form form .input-box input::placeholder{
+        font-size: 15px;
+    }
+    .contact .contact-form form .input-box textarea{
+        font-size: 15px;
+    }
+    .contact .contact-form form .input-box textarea::placeholder{
+        font-size: 15px;
+    }
+    .contact .contact-form form .btn input[type=submit]{
+        font-size: 14px;
+    }
+
+}
+
+/* lg */
+
+@media(max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+    .w-lg-3{
+        width: 33.33%;
+    }
+
+    /* header */
+
+    header .navbar .logo{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    header .navbar .logo p{
+        font-size: 15px;
+        margin: 0 40px;
+    }
+    header .navbar nav ul li a{
+        font-size: 14px;
+        margin: 0 18px;
+    }
+    header .navbar .btn{
+        padding: 6px 35px;
+        margin-left: 35px;
+        transition: all 0.3s ease-in-out;
+    }
+    header .navbar .btn a{
+        font-size: 14px;
+    }
+    header.fixed .navbar .logo{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    header.fixed .navbar .logo p{
+        font-size: 15px;
+        margin: 0 40px;
+    }
+    header.fixed .navbar nav ul li a{
+        font-size: 14px;
+        margin: 0 18px;
+    }
+    header.fixed .navbar .btn{
+        padding: 6px 35px;
+        margin-left: 35px;
+        transition: all 0.3s ease-in-out;
+    }
+    header.fixed .navbar .btn a{
+        font-size: 14px;
+    }
+
+    /* chack-availability */
+
+    .chack-availability form .form-box{
+        padding: 20px 40px;
+    }
+    .chack-availability form .form-box .card input{
+        font-size: 14px;
+        height: 45px;
+    }
+    .chack-availability form .form-box .card select{
+        font-size: 14px;
+        height: 45px;
+    }
+    .chack-availability form .form-box .card input[type="button"]{
+        font-size: 12px;
+        height: 45px;
+        padding: 10px 20px;
+    }
+
+    /* about */
+
+    .about .title h2{
+        font-size: 45px;
+    }
+    .about .about-cantent{
+        padding: 0 50px;
+    }
+    .about .about-cantent p{
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 27px;
+    }
+    .about .about-cantent .btn a{
+        font-size: 14px;
+    }
+
+     /* activity */
+
+    .activity .images .card{
+        padding: 80px;
+        height: 200px;
+    }
+    .activity .images .card .activity-name h2{
+        font-size: 27px;
+    }
+    .activity .images .card-2{
+        padding: 80px;
+        height: 200px;
+    }
+    .activity .images .card-2 .activity-name h2{
+        font-size: 27px;
+    }
+    .activity .images .card-3{
+        padding: 80px;
+        height: 200px;
+    }
+    .activity .images .card-3 .activity-name h2{
+        font-size: 27px;
+    }
+    .activity .images .card-4{
+        padding: 80px;
+        height: 200px;
+    }
+    .activity .images .card-4 .activity-name h2{
+        font-size: 27px;
+    }
+    .activity .images .card-5{
+        padding: 80px;
+        height: 200px;
+    }
+    .activity .images .card-5 .activity-name h2{
+        font-size: 27px;
+    }
+    .activity .images .card-6{
+        padding: 80px;
+        height: 200px;
+    }
+    .activity .images .card-6 .activity-name h2{
+        font-size: 27px;
+    }
+
+    /* service */
+
+    .services .service-card .card{
+        padding: 20px 0;
+    }
+    .services .service-card .card .card-body h2{
+        font-size: 18px;
+    }
+    .services .service-card .card .card-body p{
+        font-size: 14px;
+    }
+
+    /* destination */
+
+    .destination .destination-contant .card{
+        height: 450px;
+    }
+    .destination .destination-contant .card .image img{
+        height: 450px;
+    }
+    .destination .destination-contant .card::before{
+        height: 450px;
+    }
+    .destination .destination-contant .card-2{
+        height: 300px;
+    }
+    .destination .destination-contant .card-2 .image img{
+        height: 300px;
+    }
+    .destination .destination-contant .card-2::before{
+        height: 300px;
+    }
+
+    /* package */
+
+    .package .package-content .swiper-slide .card .body{
+        padding: 8px 20px;
+    }
+    .package .package-content .swiper-slide .card .body h3{
+        font-size: 23px;
+    }
+    .package .package-content .swiper-slide .card .icon i{
+        font-size: 12px;
+    }
+    .package .package-content .swiper-slide .card .icon p{
+        font-size: 13px;
+    }
+    .package .package-content .swiper-slide .card .tour-info{
+        margin: 20px 0;
+    }
+    .package .package-content .swiper-slide .card .tour-info ul li{
+        font-size: 13px;
+    }
+    .package .package-content .swiper-slide .card .tour-info ul li i{
+        font-size: 9px;
+    }
+    .package .package-content .swiper-slide .card .tour-info .price h4{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .package .package-content .swiper-slide .card .tour-info .price h2{
+        font-size: 27px;
+        margin-left: 10px;
+    }
+    .package .package-content .swiper-slide .card .buttons{
+        margin-top: 35px;
+    }
+    .package .package-content .swiper-slide .card .buttons a{
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 58px;
+        line-height: 75px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 13px 35px;
+        font-size: 13px;
+    }
+
+    /* review */
+
+    .review .review-card .name h2{
+        font-size: 30px;
+    }
+    .review .swiper-slide-active .review-card .image img{
+        transform: scale(1.5);
+        border: 1px solid rgb(255, 88, 88);
+    }
+    .review .review-card .image img{
+        width: 150px;
+        margin-top: 30px;
+    }
+    .review .review-card .card-body{
+        margin: 70px 0;
+    }
+    .review .review-card .card-body .rating i{
+        font-size: 15px;
+    }
+    .review .review-card .card-body p{
+        font-size: 14px;
+    }
+
+    /* blog */
+
+    .blog .blog-content .blog-card .card .card-body{
+        padding: 15px;
+    }
+    .blog .blog-content .blog-card .card .card-body .icon i{
+        font-size: 10px;
+        margin-right: 7px;
+    }
+    .blog .blog-content .blog-card .card .card-body .icon p{
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    .blog .blog-content .blog-card .card .card-body h3{
+        margin: 10px 0;
+    }
+    .blog .blog-content .blog-card .card .card-body h3 a{
+        font-size: 18px;
+    }
+    .blog .blog-content .blog-card .card .card-body p{
+        font-size: 14px;
+    }
+    .blog .blog-content .blog-card .card .card-body .btn a{
+        font-size: 13px;
+    }
+    .blog .blog-content .blog-card .card .card-body .btn a i{
+        font-size: 11px;
+    }
+
+    /* contact */
+
+    .contact .contact-contant .contact-info h2{
+        font-size: 35px;
+    }
+    .contact .contact-contant .contact-info .icon i{
+        font-size: 15px;
+    }
+    .contact .contact-contant .contact-info .icon p{
+        font-size: 14px;
+    }
+    .contact .contact-contant .contact-info .map{
+        width: 200px;
+        height: 200px;
+        margin-left: 60px;
+    }
+    .contact .contact-contant .contact-info .icon a{
+        font-size: 15px;
+    }
+    .contact .contact-contant .contact-form .form-title h2{
+        font-size: 35px;
+    }
+    .contact .contact-form form .input-box input{
+        font-size: 14px;
+        height: 50px;
+    }
+    .contact .contact-form form .input-box input::placeholder{
+        font-size: 14px;
+    }
+    .contact .contact-form form .input-box textarea{
+        font-size: 14px;
+        height: 100px;
+    }
+    .contact .contact-form form .input-box textarea::placeholder{
+        font-size: 14px;
+    }
+    .contact .contact-form form .btn input[type=submit]{
+        font-size: 13px;
+        padding: 13px 35px;
+    }
+
+
+    /* footer */
+
+    .footer .logo .footer-logo{
+        font-size: 14px;
+    }
+    .footer .logo .footer-logo p{
+        font-size: 15px;
+        margin: 0 40px;
+    }
+    .footer .logo p{
+        font-size: 14px;
+    } 
+    .footer .logo .icon a i{
+        font-size: 13px;
+    }
+
+    .footer .links h2{
+        font-size: 27px;
+    }
+    .footer .links .menu ul li{
+        font-size: 14px;
+    }
+
+    .footer .location{
+        padding: 0 30px;
+    }
+    .footer .location h2{
+        font-size: 27px;
+    }
+    .footer .location .menu ul li{
+        font-size: 14px;
+    }
+    .footer .menu .icon p{
+        font-size: 14px;
+    }
+    .footer .menu .icon a{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .footer .newsletter h2{
+        font-size: 27px;
+    }
+    .footer .newsletter p{
+        font-size: 14px;
+    }
+    .footer .newsletter form .input-box{
+        height: 45px;
+    }
+    .footer .newsletter form .input-box i{
+        font-size: 14px;
+        margin-top: -2px;
+    }
+    .footer .newsletter form .input-box input::placeholder{
+        font-size: 12px;
+    }
+    .footer .newsletter form .input-box input{
+        padding: 10px 8px;
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .footer .newsletter form .input-box .submit-box{
+        width: 50px;
+        height: 43px;
+    }
+
+    .footer .copyright{
+        font-size: 14px;
+    }
+    .footer .copyright a{
+        font-size: 14px;
+    }
+}
+
+/* md */
+
+@media(max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+
+    /* header */
+
+    header .navbar nav ul{
+        position: absolute;
+        top: 95px;
+        left: 0;
+        background: white;
+        width: 97%;
+        display: none;
+        margin: 0 15px;
+        border-left: 30px solid white;
+        border-right: 30px solid white;
+    }
+    header .navbar nav ul li{
+        border-bottom: 1px solid rgba(207, 180, 180, 0.3);
+        display: block;
+    }
+    header .navbar nav ul li a{
+        display: block;
+        color: black;
+        margin: 15px 20px;
+    }
+    header .navbar nav ul li:first-child a{
+        margin-top: 25px;
+    }
+    header .navbar nav ul li:last-child a{
+        margin-bottom: 25px;
+    }
+    header .navbar .toggle{
+        display: block;
+        margin-right: 10px;
+    }
+
+    .fixed{
+        display: none;
+    }
+
+    header .navbar .darkbtn .moon{
+        top: 7px;
+    }
+
+    /* about */
+
+    .about .title h2{
+        font-size: 50px;
+    }
+    .about .about-cantent{
+        padding: 10px 50px;
+    }
+    .about .about-cantent p{
+        font-size: 16px;
+        margin-bottom: 40px;
+        line-height: 30px;
+    }
+    .about .about-cantent .btn a{
+        font-size: 15px;
+    }
+
+    /* service */
+
+    .services .service-card .card{
+        padding: 20px 30px;
+    }
+    .services .service-contant .service-card .card{
+        margin: 10px 0;
+    }
+    .services .service-card .card .card-body h2{
+        font-size: 20px;
+    }
+    .services .service-card .card .card-body p{
+        font-size: 15px;
+    }
+
+    /* destination */
+
+    .destination .destination-contant .card .image h4{
+        font-size: 15px;
+    }
+    .destination .destination-contant .card .image h5{
+        font-size: 15px;
+    }
+    .destination .destination-contant .card-2 .image h4{
+        font-size: 15px;
+    }
+    .destination .destination-contant .card-2 .image h5{
+        font-size: 15px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 49px;
+        line-height: 65px;
+        margin-bottom: 30px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 12px 25px;
+        font-size: 12px;
+    }
+
+    /* review */
+
+    .review .review-card .name h2{
+        font-size: 25px;
+    }
+    .review .swiper-slide-active .review-card .image img{
+        transform: scale(1.5);
+        border: 1px solid rgb(255, 88, 88);
+    }
+    .review .review-card .image img{
+        width: 120px;
+        margin-top: 20px;
+    }
+    .review .review-card .card-body{
+        margin: 50px 0;
+    }
+    .review .review-card .card-body .rating i{
+        font-size: 14px;
+    }
+    .review .review-card .card-body p{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    /* blog */
+
+    .blog .blog-content .row .w-3:nth-of-type(3) .blog-card{
+        display: none;
+    }
+
+    /* contact */
+
+    .contact .contact-contant .contact-info{
+        padding: 20px;
+    }
+    .contact .contact-contant .contact-info h2{
+        font-size: 25px;
+    }
+    .contact .contact-contant .contact-info .icon i{
+        font-size: 12px;
+    }
+    .contact .contact-contant .contact-info .icon p{
+        font-size: 12px;
+    }
+    .contact .contact-contant .contact-info .map{
+        width: 100px;
+        height: 100px;
+        margin-left: 60px;
+    }
+    .contact .contact-contant .contact-info .icons .icon:nth-of-type(4) a{
+        font-size: 12px;
+    }
+    .contact .contact-contant .contact-form .form-title h2{
+        font-size: 25px;
+    }
+    .contact .contact-form form .input-box input{
+        font-size: 12px;
+        height: 30px;
+        margin-bottom: 0px;
+    }
+    .contact .contact-form form .input-box input::placeholder{
+        font-size: 12px;
+    }
+    .contact .contact-form form .input-box textarea{
+        font-size: 14px;
+        height: 80px;
+    }
+    .contact .contact-form form .input-box textarea::placeholder{
+        font-size: 13px;
+    }
+    .contact .contact-form form .btn input[type=submit]{
+        font-size: 12px;
+        padding: 11px 25px;
+    }
+
+    /* footer */
+
+    .footer .location{
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+    .footer .newsletter{
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+
+}
+
+
+/* sm */
+
+@media(max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    .w-sm-2{
+        width: 50%;
+    }
+    .w-sm-1{
+        width: 100%;
+    }
+    .text-sm-center{
+        text-align: center;
+    }
+
+    /* banner */
+
+    .banner .swiper .swiper-wrapper .banner-bg-1{
+        padding: 140px 0;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-2{
+        padding: 140px 0;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-3{
+        padding: 140px 0;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+        font-size: 80px;
+        max-width: 600px;
+    }
+
+    /* chack-availability */
+
+    .chack-availability form .form-box{
+        display: block;
+    }
+    .chack-availability form .form-box .card{
+        width: 100%;
+        padding: 0 25px;
+    }
+    .chack-availability form .form-box .card i{
+        transform: translate(-35px , 25px);
+    }
+    .chack-availability form .form-box .card input{
+        font-size: 15px;
+        width: 100%;
+        height: 45px;
+        margin: 10px 0;
+    }
+    .chack-availability form .form-box .card select{
+        font-size: 15px;
+        width: 97%;
+        height: 45px;
+        margin: 10px 0;
+    }
+    .chack-availability form .form-box .card:nth-of-type(4){
+        margin-left: 0;
+    }
+    .chack-availability form .form-box .card input[type="button"]{
+        margin-left: 0;
+        width: 97.5%;
+    }
+
+    /* activity */
+
+    .activity .images .card{
+        height: 180px;
+        padding: 70px 25px;
+    }
+    .activity .images .card .activity-name h2{
+        font-size: 25px;
+    }
+    .activity .images .card-2{
+        height: 180px;
+        padding: 70px 25px;
+    }
+    .activity .images .card-2 .activity-name h2{
+        font-size: 25px;
+    }
+    .activity .images .card-3{
+        height: 180px;
+        padding: 70px 25px;
+    }
+    .activity .images .card-3 .activity-name h2{
+        font-size: 25px;
+    }
+    .activity .images .card-4{
+        height: 180px;
+        padding: 70px 25px;;
+    }
+    .activity .images .card-4 .activity-name h2{
+        font-size: 25px;
+    }
+    .activity .images .card-5{
+        height: 180px;
+        padding: 70px 25px;
+    }
+    .activity .images .card-5 .activity-name h2{
+        font-size: 25px;
+    }
+    .activity .images .card-6{
+        height: 180px;
+        padding: 70px 50px;
+    }
+    .activity .images .card-6 .activity-name h2{
+        font-size: 25px;
+        line-height: 28px;
+    } 
+
+    /* service */
+
+    .services .service-card .card{
+        padding: 30px 10px;
+    }
+
+    /* destination */
+
+    .destination .destination-contant .card{
+        height: 400px;
+    }
+    .destination .destination-contant .card .image img{
+        height: 400px;
+    }
+    .destination .destination-contant .card::before{
+        height: 400px;
+    }
+    .destination .destination-contant .row:nth-of-type(2) .w-2:nth-of-type(2) .card-2{
+        margin-top: 0;
+    }
+    .destination .destination-contant .row .w-3:nth-of-type(3) .card{
+        height: 300px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .destination .destination-contant .row .w-3:nth-of-type(3) .card .image img{
+        height: 300px;
+        width: 100%;
+    }
+    .destination .destination-contant .row .w-3:nth-of-type(3) .card::before{
+        height: 300px;
+        width: 100%;
+    }
+    .destination .destination-contant .card-2{
+        height: 300px;
+        width: 97%;
+        margin-top: 20px;
+    }
+    .destination .destination-contant .card-2 .image img{
+        height: 300px;
+    }
+    .destination .destination-contant .card-2::before{
+        height: 300px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    /* review */
+
+    .review .swiper-slide-active .review-card{
+        padding: 0 50px;
+    }
+    .review .review-card .name h2{
+        font-size: 35px;
+    }
+    .review .review-card .image img{
+        width: 150px;
+        margin-top: 30px;
+    }
+    .review .review-card .card-body{
+        margin: 70px 50px;
+    }
+    .review .review-card .card-body .rating i{
+        font-size: 15px;
+    }
+    .review .review-card .card-body p{
+        font-size: 14px;
+    }
+
+    /* contact */
+
+    .contact .contact-contant{
+        padding: 0 20px;
+    }
+    .contact .contact-contant .contact-info{
+        padding: 20px 40px;
+        border-radius: 10px; 
+    }
+    .contact .contact-contant .contact-info h2{
+        font-size: 35px;
+    }
+    .contact .contact-contant .contact-info .icon i{
+        font-size: 18px;
+    }
+    .contact .contact-contant .contact-info .icon p{
+        font-size: 15px;
+    }
+    .contact .contact-contant .contact-info .icons .icon:nth-of-type(4) a {
+        font-size: 15px;
+    }
+    .contact .contact-contant .contact-info .map{
+        width: 250px;
+        height: 250px;
+    }
+    .contact .contact-contant .contact-form{
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid rgb(255, 88, 88);
+        border-radius: 10px;
+    }
+    .contact .contact-contant .contact-form .form-title h2{
+        font-size: 35px;
+    }
+
+}
+
+
+/* xs */
+
+@media(max-width:575px){
+    .container{
+        max-width: 100%;
+    }
+    .w-xs-1{
+        width: 100%;
+    }
+
+    /* header */
+
+    header .navbar .btn{
+        display: none;
+    }
+
+    /* about */
+
+    .about .title h4{
+        font-size: 18px;
+    }
+    .about .title h4::before{
+        left: 110px;
+    }
+    .about .title h4::after{
+        left: 110px;
+    }
+    .about .title h2{
+        font-size: 37px;
+    }
+    .about .about-cantent{
+        padding: 0 50px;
+    }
+    .about .about-cantent p{
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .about .about-cantent .btn a{
+        padding: 10px 25px;
+    }
+
+    /* activity */
+
+    .activity .title h4{
+        font-size: 18px;
+    }
+    .activity .title h2{
+        font-size: 42px;
+    }
+    .activity .images .card-6{
+        padding: 70px 25px;
+        height: 180px;
+    }
+
+    /* service */
+
+    .services .title h4{
+        font-size: 18px;
+    }
+    .services .title h2{
+        font-size: 42px;
+    }
+
+    /* destination */
+
+    .destination .title h4{
+        font-size: 18px;
+    }
+    .destination .title h2{
+        font-size: 42px;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    .destination .destination-contant .card{
+        height: 300px;
+        width: 100%;
+        margin: 0;
+    }
+    .destination .destination-contant .row .w-3:nth-of-type(2) .card{
+        margin-top: 20px;
+    }
+    .destination .destination-contant .card .image img{
+        height: 300px;
+    }
+    .destination .destination-contant .card-2{
+        height: 300px;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .destination .destination-contant .card-2 .image img{
+        height: 300px;
+    }
+    .destination .destination-contant .card-2::before{
+        height: 300px;
+    }
+
+    /* package */
+
+    .package .title h4{
+        font-size: 18px;
+    }
+    .package .title h2{
+        font-size: 42px;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    .package .package-content .swiper-slide{
+        padding: 0;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 10px 15px;
+        font-size: 9px;
+    }
+
+    /* review */
+
+    .review .title h4{
+        font-size: 18px;
+    }
+    .review .title h2{
+        font-size: 42px;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    /* blog */
+
+    .blog .title h4{
+        font-size: 18px;
+    }
+    .blog .title h2{
+        font-size: 42px;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    .blog .blog-content .blog-card{
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .blog .blog-content .row .w-3:nth-of-type(3) .blog-card{
+        display: block;
+        margin-bottom: 0;
+    }
+    .blog .blog-content .blog-card .card .card-body{
+        padding: 20px 22px;
+    }
+
+    /* contact */
+
+    .contact .title h4{
+        font-size: 18px;
+    }
+    .contact .title h2{
+        font-size: 42px;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    /* footer */
+
+    .footer .logo{
+        padding: 0 30px;
+    }
+    .footer .links{
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+    .footer .location{
+        margin-top: 20px;
+        padding: 0 30px;
+    }
+    .footer .newsletter{
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+
+}

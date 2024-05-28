@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+h4{
+    color: rgb(134, 134, 134);
+}
+
+/* header */
+
+header{
+    margin: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+header .header-content .menu nav ul li{
+    list-style: none;
+}
+header .header-content .menu nav ul li a{
+    font-size: 17px;
+    color: rgb(18, 0, 54);
+    margin: 0 15px;
+    transition: all 0.4s ease-in-out;
+}
+header .header-content .menu nav ul li a:hover{
+    color: rgb(255, 233, 110);
+}
+header .header-content .button .btn{
+    background-color: rgb(255, 238, 140);
+    color: rgb(18, 0, 54);
+    padding: 8px 35px;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+header .header-content .button .btn:hover{
+    background-color: rgb(255, 245, 100);
+}
+.fixed{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: white;
+    box-shadow: 5px 5px 10px -8px black;
+    z-index: 9;
+}
+
+/* banner */
+
+.banner h1{
+    color: rgb(18, 0, 54);
+    font-size: 100px;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+.banner:hover h1{
+    transform: translateY(8%);
+}
+.banner .banner-img img{
+    width: 100%;
+    margin-left: -5px;
+    margin-bottom: 50px;
+    transition: all 0.4s ease;
+}
+.banner:hover img{
+    transform: translateY(-5%);
+}
+.banner .button .btn{
+    background-color: rgb(255, 232, 104);
+    color: rgb(18, 0, 54);
+    padding: 8px 35px;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+.banner .button .btn:hover{
+    background-color: rgb(255, 244, 83);
+}
+.banner .button{
+    margin-bottom: 30px;
+    margin-top: -40px;
+}
+
+/* counter */
+
+.counter{
+    background-color: rgb(250, 250, 250);
+    padding: 50px;
+}
+.counter .counter-card{
+    margin-right: 15px;
+}
+.counter .counter-card .card{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px -10px black;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.counter .counter-card .card:hover{
+    background-color: rgb(255, 255, 115);
+}
+.counter .counter-card .card .card-icon i{
+    font-size: 25px;
+    color: rgb(18, 0, 54);
+    margin: 23px 20px;
+    border-radius: 50%;
+    padding: 15px 14px;
+    background-color: rgb(224, 224, 224);
+    transition: all 0.4s ease-in-out;
+}
+.counter .counter-card .card:hover i{
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+.count{
+    color: rgb(18, 0, 54);
+  font-weight: 600;
+  font-size: 25px;
+  transition: all 0.4s ease-in-out;
+}
+span{
+    color: rgb(18, 0, 54);
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+.counter .counter-card .card .card-body{
+    margin: 20px 0;
+}
+.counter .counter-card .card .card-body h5{
+    color: rgb(134, 134, 134);
+    transition: all 0.4s ease-in-out;
+}
+.counter .counter-card .card:hover h5{
+    color: rgb(18, 0, 54);
+}
+
+/* popular Vehicles */
+
+.popular-Vehicles .content h2{
+    color: rgb(18, 0, 54);
+    font-size: 70px;
+    margin-top: 30px;
+    position: relative;
+}
+.popular-Vehicles .content h2::after{
+    content: '';
+    width: 465px;
+    height: 10px;
+    background-color: rgb(255, 255, 102);
+    position: absolute;
+    bottom: 10px;
+    left: 390px;
+}
+.popular-Vehicles .car-model{
+    margin-top: 70px;
+}
+.popular-Vehicles .swiper-slide .car-detail{
+    display: none;
+}
+.popular-Vehicles .swiper-slide-active .car-detail{
+    display: block;
+}
+.popular-Vehicles .swiper-slide-active .image img{
+    transform: scale(1.5);
+}
+.popular-Vehicles .car-model .image img{
+    width: 360px;
+    padding: 0 80px;
+    transition: all 0.4s ease-in-out;
+}
+.popular-Vehicles .swiper-slide-prev{
+    opacity: 0.5;
+}
+.popular-Vehicles .swiper-slide-next{
+    opacity: 0.5;
+}
+.popular-Vehicles .car-model .car-detail{
+    margin: 50px 0;
+}
+.popular-Vehicles .car-model .car-detail h2{
+    color: rgb(18, 0, 54);
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+.popular-Vehicles .car-model .car-detail h4 span{
+    color: rgb(255, 25, 25);
+    font-weight: 600;
+}
+.popular-Vehicles .car-model .car-detail h4{
+    margin-top: 5px;
+}
+.popular-Vehicles .car-model .car-detail hr{
+    border-bottom: 0;
+    margin-top: 10px;
+    opacity: 0.3;
+}
+.popular-Vehicles .car-model .car-detail h4 span i{
+    font-size: 15px;
+    margin: 0 5px;
+}
+.popular-Vehicles .car-model .car-detail .btn{
+    margin-top: 30px;
+}
+.popular-Vehicles .car-model .car-detail .btn a{
+    padding: 8px 30px;
+    background-color: rgb(255, 232, 104);
+    color: rgb(18, 0, 54);
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+.popular-Vehicles .car-model .car-detail .btn a:hover{
+    background-color: rgb(255, 244, 83);
+}
+
+/* services */
+
+.services{
+    background-color: rgb(250, 250, 250);
+    padding: 30px 0;
+    margin-top: 30px;   
+}
+.services .services-content .services-title h2{
+    color: rgb(18, 0, 54);
+    font-size: 70px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.services .services-content .services-title h2::after{
+    content: '';
+    width: 280px;
+    height: 10px;
+    background-color: rgb(255, 255, 102);
+    position: absolute;
+    bottom: 10px;
+    right: 350px;
+}
+.services .services-content .services-card .card-items{
+    margin-left: 15px;
+}
+.services .services-content .services-card .row .w-3:nth-of-type(4){
+    margin-bottom: 50px;
+}
+.services .services-content .services-card .card-items .card{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 5px 10px -10px black;
+    transition: all 0.4s ease-in-out;
+}
+.services .services-content .services-card .card-items .card:hover{
+    background-color: rgb(26, 15, 48);
+}
+.services .services-content .services-card .card-items .card .icon i{
+    font-size: 25px;
+    color: rgb(18, 0, 54);
+    margin: 10px 10px;
+    border-radius: 50%;
+    padding: 18px 18px;
+    background-color: rgb(255, 212, 18);
+}
+.services .services-content .services-card .card-items .card .icon-3 i{
+    font-size: 25px;
+    color: rgb(18, 0, 54);
+    margin: 10px 10px;
+    border-radius: 50%;
+    padding: 18px 16px;
+    background-color: rgb(255, 212, 18);
+}
+.services .services-content .services-card .card-items .card .body h2{
+    color: rgb(18, 0, 54);
+    transition: all 0.4s ease-in-out;
+}
+.services .services-content .services-card .card-items .card:hover h2{
+    color: white;
+}
+.services .services-content .services-card .card-items .card .body p{
+    color: rgb(124, 124, 124);
+    margin: 10px 0;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+}
+.services .services-content .services-card .card-items .card:hover .body p{
+    color: white;
+}
+.services .services-content .services-card .card-items .card .btn{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.services .services-content .services-card .card-items .card .btn a{
+    padding: 8px 30px;
+    background-color: rgb(255, 232, 104);
+    color: rgb(18, 0, 54);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.services .services-content .services-card .card-items .card .btn a:hover{
+    background-color: rgb(255, 241, 46);
+}
+
+/* featured */
+
+.featured{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.featured .featured-content .title h2{
+    color: rgb(18, 0, 54);
+    font-size: 70px;
+    position: relative;
+} 
+.featured .featured-content .title h2::after{
+    content: '';
+    width: 310px;
+    height: 10px;
+    background-color: rgb(255, 255, 102);
+    position: absolute;
+    bottom: 10px;
+    left: 320px;
+}
+.featured .featured-content .feactured-car .swiper-slide .card{
+    background-color: white;
+    width: 100%;
+    height: 390px;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 5px 10px -10px black;
+}
+.featured .featured-content .feactured-car .swiper-slide .card:hover img{
+    transform: scale(0.9);
+}
+.swiper-slide .card .image img{
+    width: 300px;
+    padding: 15px;
+    transition: all 0.4s ease-in-out;
+}
+.swiper-slide .card .body h2{
+    color: rgb(18, 0, 54);
+    font-size: 23px;
+}
+.swiper-slide .card .body .icon i{
+    color: rgb(255, 196, 0);
+    margin: 15px 0;
+}
+.swiper-slide .card .body p{
+    color: rgb(18, 0, 54);
+    font-size: 25px;
+}
+.swiper-slide .card .btn{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.swiper-slide .card .btn a{
+    padding: 8px 30px;
+    background-color: rgb(255, 232, 104);
+    color: rgb(18, 0, 54);
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+.swiper-slide .card .btn a:hover{
+    background-color: rgb(255, 241, 46);
+}
+.feactured-car .swiper .swiper-wrapper .swiper-slide{
+    padding: 40px 0;
+}
+.swiper-pagination-bullet-active{
+    background-color: rgb(255, 232, 104);
+}
+.featured .featured-content .feactured-car .second-slider{
+    margin-top: -10px;
+}
+
+/* subscribe */
+
+.subscribe{
+    background: url(../image/subscribe-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    padding: 100px 0;
+}
+.subscribe::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.subscribe .subscribe-content{
+    z-index: 1;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+.subscribe .subscribe-content h2{
+    color: rgb(18, 0, 54);
+    font-size: 30px;
+}
+.subscribe .subscribe-content p{
+    color: black;
+    margin: 10px 0;
+}
+.subscribe .subscribe-content form .input-box input[type="email"]{
+    width: 80%;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 5px 10px -10px black;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+.subscribe .subscribe-content form .input-box input[type="submit"]{
+    color: rgb(18, 0, 54);
+    font-size: 15px;
+    background-color: rgb(255, 232, 104);
+    padding: 10px 30px; 
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 5px 10px -10px black;
+    border-radius: 0 20px 20px 0;
+    margin-left: -10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.subscribe .subscribe-content form .input-box input[type="submit"]:hover{
+    background-color: rgb(255, 241, 46);
+}
+.subscribe .subscribe-content form .input-box input:focus{
+    color: rgb(124, 124, 124);
+}
+
+/* review*/
+
+.review{
+    padding: 50px 0;
+}
+.review .review-content h2{
+    color: rgb(18, 0, 54);
+    font-size: 70px;
+    position: relative;
+    margin-bottom: 30px;
+} 
+.review .review-content h2::after{
+    content: '';
+    width: 240px;
+    height: 10px;
+    background-color: rgb(255, 255, 102);
+    position: absolute;
+    bottom: 10px;
+    right: 310px;
+}
+.review .review-content .review-cards .swiper-slide{
+    padding: 50px 0;
+}
+.review .review-content .review-cards .swiper-slide{
+    opacity: 0.4;
+}
+.review .review-content .review-cards .card .image img{
+    width: 120px;
+    border-radius: 50%;
+}
+.review .review-content .review-cards .card .body p{
+    color: rgb(71, 70, 70);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.review .review-content .review-cards .card .body h3{
+    font-size: 25px;
+    margin-bottom: -13px;
+    color: rgb(18, 0, 54);
+}
+.review .review-content .review-cards .swiper-slide-active{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 5px 10px -10px black;
+    opacity: 1;
+    transform: scale(1.07);
+}
+
+/* contect */
+
+.contect{
+    background-color: rgb(250, 250, 250);
+    padding: 30px 0;
+}
+.contect .contect-content .title h2{
+    color: rgb(18, 0, 54);
+    font-size: 70px;
+    position: relative;
+} 
+.contect .contect-content .title h2::after{
+    content: '';
+    width: 280px;
+    height: 10px;
+    background-color: rgb(255, 255, 102);
+    position: absolute;
+    bottom: 10px;
+    left: 375px;
+}
+.contect .contect-content .contect-detail{
+    margin: 0 10px;
+}
+.contect .contect-content .contect-detail .box{
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 5px 10px -10px black;
+}
+.contect .contect-content .contect-detail .box form h2{
+    color: rgb(18, 0, 54);
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+.contect .contect-content .contect-detail .box form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 8px 0;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+}
+.contect .contect-content .contect-detail .box form input:focus{
+    outline: none;
+    color: rgb(134, 134, 134);
+}
+.contect .contect-content .contect-detail .box form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 8px 0;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+}
+.contect .contect-content .contect-detail .box form textarea:focus{
+    outline: none;
+    color: rgb(134, 134, 134);
+}
+.contect .contect-content .contect-detail .box form .btn{
+    margin-top: 14px;
+}
+.contect .contect-content .contect-detail .box form .btn a{
+    padding: 8px 30px;
+    background-color: rgb(255, 232, 104);
+    color: rgb(18, 0, 54);
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+.contect .contect-content .contect-detail .box form .btn a:hover{
+    background-color: rgb(255, 241, 46);
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(255, 232, 104);
+    padding-top: 30px;
+}
+footer .footer-content h2{
+    color: rgb(18, 0, 54);
+    margin-bottom: 20px;
+}
+footer .footer-content ul li{
+    list-style: none;
+    margin: 20px 0;
+}
+footer .footer-content ul li a{
+    color: rgb(18, 0, 54);
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+footer .footer-content ul li a:hover{
+    margin-left: 25px;
+}
+footer .footer-content ul li i{
+    color: rgb(18, 0, 54);
+}
+footer .footer-content .w-4:last-child ul li:first-child a{
+    margin-left: 15px;
+}
+footer .footer-content .w-4:last-child ul li:first-child:hover a{
+    margin-left: 33px;
+}
+footer hr{
+    border-top: 0;
+    opacity: 0.3;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+footer .bottom-footer p{
+    color: rgb(18, 0, 54);
+    font-size: 18px;
+    padding: 15px 0;
+}

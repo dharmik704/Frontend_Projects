@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin dashboard</title>
+    <link rel="stylesheet" href="fonts/font-awsome/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="fonts/font-awsome/css/all.css" type="text/css">
+    <link rel="stylesheet" href="fonts/poppins/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-cantant justify-content-between d-flex">
+            <div class="title">
+                <h2 class="text-white">Admin Dashboard</h2>
+            </div>
+            <div class="button">
+                <button type="button" class="btn btn-primary ps-4 pe-4">Log Out</button>
+            </div>
+        </div>
+        <div class="cantant d-flex">
+            <div class="navbar">
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item mb-3">
+                      <a class="nav-link active link" href="#" id="flink">Active</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                      <a class="nav-link link" href="#" id="slink">Link</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                      <a class="nav-link link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                      <a class="nav-link link" href="#">Disabled</a>
+                    </li>
+                  </ul>
+            </div>
+            
+            <!-- form -->
+
+            <form action="" class="p-5">
+                <div class="row gx-5">
+                    <div class="mb-3 col-sm-6">
+                        <label class="form-label">Name:</label>
+                        <input type="text" class="form-control" placeholder="Enter Name" required>
+                    </div>
+                    <div class="mb-3 col-sm-6">
+                        <label class="form-label">Phone Number:</label>
+                        <input type="text" class="form-control" placeholder="Enter Phone Number" required>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="mb-3 col-sm-6">
+                        <label class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" placeholder="Enter E-mail" required>
+                    </div>
+                    <div class="mb-3 col-sm-6">
+                        <label class="form-label">City:</label>
+                        <select class="form-select" required>
+                            <option selected>Select Your City</option>
+                            <option>Surat</option>
+                            <option>Ahmedabad</option>
+                            <option>Vadodara</option>
+                            <option>Mumbai</option>
+                            <option>Rajkot</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="mb-3 col-sm-6">
+                        <label class="form-label">Address:</label>
+                        <textarea type="text" class="form-control" placeholder="Enter Address" required></textarea>
+                    </div>
+                    <div class="mb-3 col-sm-6">
+                        <label class="form-label">Gender:</label><br/>
+                        <input type="radio" value="male" name="male" required>Male
+                        <input type="radio" value="female" name="male" class="ms-4" required>Female
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success ps-4 pe-4">Subbmit</button>
+            </form>
+
+            <!-- table -->
+            
+            <div class="table none p-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th> 
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Ph. Number</th>
+                            <th>E-mail</th>
+                            <th>State</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>101</th>
+                            <td>Dharmik</td>
+                            <td>Admin</td>
+                            <td>9140289489</td>
+                            <td>dharmik123@gmail.com</td>
+                            <td>Gujarat</td>
+                            <td>Surat</td>
+                            <td><button type="submit" class="btn btn btn-success">Update</button></td>
+                            <td><button type="submit" class="btn btn btn-danger">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <th>102</th>
+                            <td>Dhruv</td>
+                            <td>User</td>
+                            <td>9140289489</td>
+                            <td>dhruv123@gmail.com</td>
+                            <td>Gujarat</td>
+                            <td>Surat</td>
+                            <td><button type="submit" class="btn btn btn-success">Update</button></td>
+                            <td><button type="submit" class="btn btn btn-danger">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <th>103</th>
+                            <td>parth</td>
+                            <td>User</td>
+                            <td>9140289489</td>
+                            <td>dhruv123@gmail.com</td>
+                            <td>Maharashtra</td>
+                            <td>Surat</td>
+                            <td><button type="submit" class="btn btn btn-success">Update</button></td>
+                            <td><button type="submit" class="btn btn btn-danger">Delete</button></td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+        </div>  
+    </header>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('a').click(function() {
+            $("ul li a.active").removeClass("active");
+            $(this).addClass('active');
+
+            });
+        });
+
+        jQuery(function(){
+            jQuery("#flink").click(function(){
+                jQuery("form").show();
+            });
+        });
+
+        jQuery(".link").click(function(){
+            jQuery("form").hide();
+        });
+
+        jQuery(function(){
+            jQuery("#slink").click(function(){
+                jQuery(".table").show();
+                jQuery(".table").addClass("block");
+            });
+        });
+
+        jQuery(".link").click(function(){
+            jQuery(".table").hide();
+        });
+
+    </script>
+</body>
+</html>

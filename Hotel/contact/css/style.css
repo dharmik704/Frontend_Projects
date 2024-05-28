@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+    display: flex;
+}
+.justify-bitween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.ml-50{
+    margin-left: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.justify-center{
+    justify-content: center;
+}
+span{
+    color: rgb(21, 181, 255);
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+
+/* header */
+
+header{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar{
+    padding: 10px 0;
+}
+header .navbar nav ul li{
+    list-style: none;
+    position: relative;
+}
+header .navbar nav ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+    right: 110px;
+    height: 2px;
+    background-color: rgb(21, 181, 255);
+    transition: all 0.3s ease-in-out;
+}
+header .navbar nav ul li a:hover::before{
+    right: 24px;
+}
+header .navbar nav ul li a.active2::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(2) a.active::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(3) a.active::before{
+    width: 56%;
+}
+header .navbar nav ul li:nth-of-type(4) a.active::before{
+    width: 62%;
+}
+header .navbar nav ul li:nth-of-type(5) a.active::before{
+    width: 61%;
+}
+header .navbar nav ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 25px;
+}
+header .navbar .logo img{
+    width: 150px;
+    margin-right: 20px;
+}
+header .navbar .btn{
+    background-color: rgb(21, 181, 255);
+    padding: 8px 50px;
+    border: 1px solid rgb(21, 181, 255);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar .btn a{
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar .btn:hover{
+    background-color: white;
+    border: 1px solid rgb(21, 181, 255);
+}
+header .navbar .btn:hover a{
+    color: rgb(21, 181, 255);
+}
+.fixed{
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 5px 5px 20px -5px black;
+    z-index: 999;
+}
+
+/* main */
+
+main{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* banner */
+
+.banner .banner-bg{
+    background: url(../image/banner-bg.jpg) rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 100px 0;
+}
+.banner .title h2{
+    margin: 85px 0;
+    font-size: 70px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    line-height: 75px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    opacity: 0.9;
+}
+
+/* contect-cantant */
+
+.contect-cantant{
+    background-color: rgba(204, 204, 204, 0.3);
+    padding: 100px 0;
+}
+.contect-cantant .contect-part .touch{
+    padding: 0 30px;
+}
+.contect-cantant .contect-part .touch h2{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.contect-cantant .contect-part .touch h2::before{
+    content: '';
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(21, 181, 255);
+    bottom: -15px;
+    left: 215px;
+}
+.contect-cantant .contect-part .touch p{
+    font-size: 20px;
+    color: rgb(97, 96, 96);
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.contect-cantant .contect-part .touch .icons{
+    margin-top: 40px;
+}
+.contect-cantant .contect-part .touch .icons .addr p{
+    margin: 15px 35px;
+}
+.contect-cantant .contect-part .touch .icons i{
+    font-size: 40px;
+    margin: 20px 0;
+    color: rgba(21, 181, 255, 0.8);
+}
+.contect-cantant .contect-part .touch .icons p{
+    font-size: 20px;
+    color: rgb(97, 96, 96);
+    margin: 15px 25px;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 0;
+}
+
+/* send */
+
+.contect-cantant .contect-part .send h2{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.contect-cantant .contect-part .send h2::before{
+    content: '';
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(21, 181, 255);
+    bottom: -15px;
+    left: 220px;
+}
+.contect-cantant .contect-part .send p{
+    font-size: 20px;
+    color: rgb(97, 96, 96);
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    text-align: center;
+}
+.contect-cantant .contect-part .contact-form form{
+    background: transparent;
+    /* padding: 10px 30px; */
+    margin-left: 50px;
+    /* margin-top: 26px; */
+}
+.contect-cantant .contect-part .contact-form form .input-box{
+    position: relative;
+}
+.input{
+    width: 40%;
+    padding: 10px 0;
+    margin: 20px 25px;
+    font-size: 20px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.contect-cantant .contect-part .contact-form form .input-box textarea{
+    width: 90%;
+}
+input{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: rgb(102 102 102);
+}
+::placeholder{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: rgb(102 102 102);
+}
+textarea{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: rgb(102 102 102);
+}
+.input:focus{
+    border-bottom: 1px solid rgb(21, 181, 255);
+    color: rgb(102 102 102);
+}
+.contect-cantant .contect-part .contact-form form .btn input{
+    padding: 12px 35px;
+    font-size: 18px;
+    background-color: rgb(21, 181, 255);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin: 30px;
+    transition: all 0.4s ease-in-out;
+}
+.contect-cantant .contect-part .contact-form form .btn input:hover{
+    background-color: rgb(20, 147, 206);
+}
+
+
+/* footer */
+
+footer .top-footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 70px;
+}
+footer .footer-contant{
+    border-bottom: 1px solid rgba(128, 130, 131, 0.5);
+    padding-bottom: 50px;
+}
+footer .footer-contant .logo img{
+    width: 150px;
+}
+footer .footer-contant .logo .contant p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 15px 0;
+}
+
+
+footer .footer-contant .quick-link{
+    margin-top: 20px;
+}
+footer .footer-contant .quick-link h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+}
+footer .footer-contant .quick-link h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .quick-link{
+    margin-left: 40px;
+}
+footer .footer-contant .quick-link ul{
+    margin-top: 50px;
+}
+footer .footer-contant .quick-link ul i{
+    color: rgb(139, 139, 139);
+}
+footer .footer-contant .quick-link ul{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style: none;
+}
+footer .footer-contant .quick-link ul li{
+    margin: 15px 0;
+    font-size: 18px;
+}
+footer .footer-contant .quick-link ul li a{
+    margin: 0 8px;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .quick-link ul li a:hover{
+    color: rgb(21, 181, 255);
+}
+
+
+footer .footer-contant .contact-info{
+    margin-left: 20px;
+    margin-top: 22px;
+}
+footer .footer-contant .contact-info h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 15px;
+}
+footer .footer-contant .contact-info h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .contact-info ul{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    list-style: none;
+    margin-top: 55px;
+}
+footer .footer-contant .contact-info ul li{
+    margin: 20px 0;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+}
+footer .footer-contant .contact-info ul li i{
+    color: rgb(139, 139, 139);
+    margin-right: 5px;
+}
+footer .footer-contant .contact-info ul li:nth-of-type(3) i{
+    margin-right: 15px;
+}
+footer .footer-contant .contact-info ul li:nth-of-type(4) i{
+    margin-right: 20px;
+}
+footer .footer-contant .contact-info ul li a{
+    margin: 0 8px;
+    font-size: 20px;
+    color: rgb(139, 139, 139);
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .contact-info ul li a:hover{
+    color: rgb(21, 181, 255);
+}
+
+
+footer .footer-contant .newsletter{
+    margin-left: 50px;
+    margin-top: 22px;
+}
+footer .footer-contant .newsletter h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    max-width: 450px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+    opacity: 0.9;
+    position: relative;
+    margin-top: 15px;
+}
+footer .footer-contant .newsletter h2::before{
+    content: '';
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    background-color: white;
+    bottom: -15px;
+    opacity: 0.7;
+}
+footer .footer-contant .newsletter p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+footer .footer-contant .newsletter form .input-box{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(53, 53, 56);
+    position: relative;
+    border: 1px solid rgb(53, 53, 56);
+    margin: 30px 0;
+}
+footer .footer-contant .newsletter form .input-box i{
+    padding: 15px 15px;
+    font-size: 18px;
+    color: rgba(255,255,255,.8);
+}
+footer .footer-contant .newsletter form .input-box input{
+    position: absolute;
+    background: transparent;
+    padding: 12.5px 10px;
+    margin-left: -15px;
+    border: 1px solid rgb(53, 53, 56);
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+footer .footer-contant .newsletter form .input-box input::placeholder{
+    color: rgba(255,255,255,.8);
+    font-size: 15px;
+}
+footer .footer-contant .newsletter form .input-box .submit-box{
+    width: 60px;
+    height: 49px;
+    background-color: rgb(21, 181, 255);
+    border: 1px solid rgb(21, 181, 255);
+    position: absolute;
+    top: -1px;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter form .input-box .submit-box i{
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter form .input-box .submit-box:hover{
+    background-color: rgb(20, 147, 206);
+    border: 1px solid rgb(20, 147, 206);
+}
+footer .footer-contant .newsletter ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+footer .footer-contant .newsletter ul li a{
+    font-size: 25px;
+    color: white;
+}
+footer .footer-contant .newsletter ul li a i{
+    transition: all 0.4s ease-in-out;
+}
+footer .footer-contant .newsletter ul li:nth-of-type(1) a:hover i{
+    color: rgb(66, 103, 178);
+}
+footer .footer-contant .newsletter ul li:nth-of-type(2) a:hover i{
+    color: rgb(29, 155, 240);
+}
+footer .footer-contant .newsletter ul li:nth-of-type(3) a:hover i{
+    background: linear-gradient(rgb(254,218,117), rgb(250,126,30), rgb(214,41,118), rgb(150,47,191), rgb(79,91,213));
+    border-radius: 5px;
+}
+footer .footer-contant .newsletter ul li:nth-of-type(4) a:hover i{
+    color: rgb(230, 0, 35);
+}
+
+footer .bottom-footer{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 25px 0;
+}
+footer .bottom-footer p{
+    color: rgb(139, 139, 139);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+footer .bottom-footer p a{
+    transition: all 0.4s ease-in-out;
+}
+footer .bottom-footer p a:hover{
+    color: rgb(21, 181, 255);
+}

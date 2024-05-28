@@ -1,0 +1,679 @@
+/* xl */
+
+@media(max-width:1399px){
+    .container{
+        max-width: 1140px;
+    }
+
+    /* banner */
+
+    .banner .swiper .swiper-wrapper .banner-bg-1{
+        padding: 120px 110px;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-2{
+        padding: 120px 110px;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-3{
+        padding: 120px 110px;
+    }
+
+    /* about */
+
+    .about .about-cantent p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .about .up-icon a{
+        font-size: 16px;
+        padding: 12px 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* service */
+
+    .services .service-card .card .card-body p{
+        font-size: 15px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 90px;
+        line-height: 110px;
+        max-width: 600px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 14px 45px;
+        font-size: 14px;
+    }
+
+    /* contact */
+
+    .contact .contact-form form .input-box input{
+        font-size: 15px;
+    }
+    .contact .contact-form form .input-box input::placeholder{
+        font-size: 15px;
+    }
+    .contact .contact-form form .input-box textarea{
+        font-size: 15px;
+    }
+    .contact .contact-form form .input-box textarea::placeholder{
+        font-size: 15px;
+    }
+    .contact .contact-form form .btn input[type=submit]{
+        font-size: 14px;
+    }
+
+}
+
+/* lg */
+
+@media(max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+    .w-lg-3{
+        width: 33.33%;
+    }
+
+    /* banner */
+
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+        font-size: 60px;
+        line-height: 40px;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h3{
+        font-size: 60px;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent p{
+        font-size: 15px;
+        margin: 15px 0;
+        max-width: 600px;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn{
+        margin: 35px 0;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn a{
+        font-size: 14px;
+    }
+
+    /* about */
+
+    .about .title{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .about .title h2{
+        font-size: 45px;
+    }
+    .about .about-cantent p{
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 27px;
+    }
+    .about .up-icon a{
+        font-size: 16px;
+        padding: 12px 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 70px;
+        line-height: 85px;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 13px 35px;
+        font-size: 13px;
+    }
+
+    /* doctors */
+
+    .doctors .doctors-content .swiper-slide .card .body h3{
+        font-size: 35px;
+        line-height: 25px;
+    }
+    .doctors .doctors-content .swiper-slide .card .body p{
+        font-size: 16px;
+    }
+
+    /* contact */
+
+    .contact .contact-contant .image img {
+        width: 92%;
+        height: 530px 
+    }
+    .contact .contact-contant .contact-form .form-title h2{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .contact .contact-form form .input-box input{
+        font-size: 14px;
+        height: 50px;
+        margin: 10px 0;
+    }
+    .contact .contact-form form .input-box input::placeholder{
+        font-size: 14px;
+    }
+    .contact .contact-form form .input-box textarea{
+        font-size: 14px;
+        height: 100px;
+    }
+    .contact .contact-form form .input-box textarea::placeholder{
+        font-size: 14px;
+    }
+    .contact .contact-form form .btn input[type=submit]{
+        font-size: 13px;
+        padding: 13px 35px;
+    }
+
+
+    /* footer */
+
+    .footer .logo{
+        line-height: 22px;
+    }
+    .footer .logo .footer-logo img{
+        width: 45px;
+        background: rgb(15 97 239);
+        border-radius: 10px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    .footer .logo .logo-name h1{
+        font-size: 25px;
+    }
+    .footer .logo  .logo-name p{
+        font-size: 14px;
+        margin: 0 18px;
+    }
+    .footer .logo-content p{
+        font-size: 14px;
+    } 
+    .footer .logo-content .icon a i{
+        font-size: 13px;
+    }
+
+    .footer .links{
+        margin-left: 20px;
+    }
+    .footer .links h2{
+        font-size: 27px;
+    }
+    .footer .links .menu ul li{
+        font-size: 14px;
+    }
+
+    .footer .department h2{
+        font-size: 27px;
+    }
+    .footer .department .menu ul li{
+        font-size: 14px;
+    }
+
+    .footer .location{
+        padding: 0 30px;
+    }
+    .footer .location h2{
+        font-size: 27px;
+    }
+    .footer .menu .icon{
+        margin-bottom: 15px;
+    }
+    .footer .location .menu ul li{
+        font-size: 14px;
+    }
+    .footer .menu .icon p{
+        font-size: 14px;
+    }
+    .footer .menu .icon a{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+}
+
+/* md */
+
+@media(max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+
+    /* header */
+
+    .dark-mode header .navbar nav ul{
+        background: rgb(51 51 51);
+        border-left: 30px solid rgb(51 51 51);
+        border-right: 30px solid rgb(51 51 51);
+    }
+    .dark-mode header .navbar nav ul li a{
+        color: white;
+    }
+    .dark-mode header .navbar nav ul li ul{
+        border: 0;
+    }
+    header .navbar nav ul{
+        position: absolute;
+        top: 95px;
+        left: 0;
+        background: white;
+        width: 97%;
+        display: none;
+        margin: 0 15px;
+        border-left: 30px solid white;
+        border-right: 30px solid white;
+    }
+    header .navbar nav ul li{
+        border-bottom: 1px solid rgba(207, 180, 180, 0.3);
+        display: block;
+    }
+    header .navbar nav ul li:nth-of-type(6) a{
+        display: block;
+    }
+    header .navbar nav ul li a{
+        display: block;
+        font-size: 15px;
+        color: black;
+        margin: 10px 20px;
+    }
+    header .navbar nav ul li:first-child a{
+        margin-top: 25px;
+    }
+    header .navbar nav ul li:last-child a{
+        margin-bottom: 25px;
+    }
+    header .navbar nav ul li ul{
+        border: 0;
+        padding: 0;
+        width: 150px;
+        position: absolute;
+        top: 40px;
+        left: 25px;
+        border-radius: 5px;
+        display: none;
+    }
+    header .navbar nav ul li:nth-last-of-type(1) ul li{
+        padding: 5px 10px;
+    }
+    header .navbar nav ul li:nth-last-of-type(1) ul li a{
+        color: black;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    header .navbar .toggle{
+        display: block;
+        margin-right: 10px;
+    }
+
+    .fixed{
+        display: none;
+    }
+
+    /* banner */
+
+    .banner .swiper .swiper-wrapper .banner-bg-1{
+        padding: 140px 110px;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-2{
+        padding: 140px 110px;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-3{
+        padding: 140px 110px;
+    }
+
+    /* about */
+
+    .about .title{
+        padding-top: 40px;
+    }
+    .about .title h2{
+        font-size: 50px;
+    }
+    .about .about-cantent{
+        padding: 10px 50px;
+    }
+    .about .about-cantent p{
+        font-size: 18px;
+        line-height: 35px;
+        margin-bottom: 0;
+    }
+    .about .up-icon a{
+        font-size: 16px;
+        padding: 12px 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* service */
+
+    .services .title h2{
+        margin-bottom: 70px;
+    }
+    .services .service-card .card{
+        padding: 20px 30px;
+    }
+    .services .service-contant .service-card .card{
+        margin: 10px 0;
+    }
+    .services .service-card .card .card-body h2{
+        font-size: 20px;
+    }
+    .services .service-card .card .card-body p{
+        font-size: 15px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 65px;
+        line-height: 75px;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 12px 25px;
+        font-size: 12px;
+    }
+
+    /* contact */
+
+    .contact .contact-contant .image img{
+        width: 95%;
+        height: 400px;
+        /* padding: 0 30px; */
+    }
+    .contact .contact-contant .contact-form .form-title h2{
+        font-size: 25px;
+    }
+    .contact .contact-form form .input-box input{
+        font-size: 12px;
+        height: 30px;
+        margin-bottom: 0px;
+    }
+    .contact .contact-form form .input-box input::placeholder{
+        font-size: 12px;
+    }
+    .contact .contact-form form .input-box textarea{
+        font-size: 14px;
+        height: 80px;
+    }
+    .contact .contact-form form .input-box textarea::placeholder{
+        font-size: 13px;
+    }
+    .contact .contact-form form .btn input[type=submit]{
+        font-size: 12px;
+        padding: 11px 25px;
+        margin-top: 0;
+    }
+
+    /* footer */
+
+    .footer .department{
+        padding-top: 30px;
+        padding-left: 0;
+        margin-left: 0;
+        padding-right: 30px;
+    }
+    .footer .location{
+        padding-top: 30px;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .footer .location .menu .icon {
+        margin-bottom: 20px;
+    }
+    .footer .copyright{
+        font-size: 15px;
+    }
+
+}
+
+
+/* sm */
+
+@media(max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    .w-sm-2{
+        width: 50%;
+    }
+    .w-sm-1{
+        width: 100%;
+    }
+    .text-sm-center{
+        text-align: center;
+    }
+
+    /* banner */
+
+    .banner .swiper .swiper-wrapper .banner-bg-1{
+        padding: 150px 0;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-2{
+        padding: 150px 0;
+    }
+    .banner .swiper .swiper-wrapper .banner-bg-3{
+        padding: 150px 0;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+        font-size: 50px;
+        line-height: 40px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h3{
+        font-size: 50px;
+        margin: 0 auto;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent p{
+        font-size: 14px;
+        margin: 15px 0;
+        max-width: 450px;
+        margin: 20px auto;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn{
+        margin: 35px 0;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn a{
+        font-size: 13px;
+    }
+
+    /* about */
+
+    .about .up-icon a{
+        font-size: 16px;
+        padding: 12px 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* service */
+
+    .services .service-card .card{
+        padding: 30px 30px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 50px;
+        max-width: 400px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    /* doctors */
+
+    .doctors .doctors-content .swiper-slide .card .body h3{
+        font-size: 50px;
+        line-height: 35px;
+    }
+    .doctors .doctors-content .swiper-slide .card .body p{
+        font-size: 20px;
+    }
+
+    /* contact */
+
+    .contact .contact-contant{
+        padding: 0 20px;
+    }
+    .contact .contact-contant .contact-form{
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    .contact .contact-contant .contact-form .form-title h2{
+        font-size: 35px;
+    }
+
+}
+
+
+/* xs */
+
+@media(max-width:575px){
+    .container{
+        max-width: 100%;
+    }
+    .w-xs-1{
+        width: 100%;
+    }
+
+    /* banner */
+
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h2{
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent h3{
+        font-size: 40px;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent p{
+        font-size: 12px;
+        max-width: 400px;
+        margin: 15px auto;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn{
+        margin: 30px 0;
+    }
+    .banner .swiper .swiper-wrapper .swiper-slide .banner-cantent .btn a{
+        font-size: 12px;
+    }
+
+
+    /* about */
+
+    .about{
+        padding: 0;
+    }
+    .about .title h4{
+        font-size: 18px;
+    }
+    .about .title h4::before{
+        left: 110px;
+    }
+    .about .title h4::after{
+        left: 110px;
+    }
+    .about .title h2{
+        font-size: 37px;
+    }
+    .about .about-cantent p{
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    /* services */
+
+    .services{
+        padding-top: 100px;
+    }
+    .services .title h4{
+        font-size: 18px;
+    }
+    .services .title h2{
+        font-size: 42px;
+    }
+    .services .service-card .card{
+        padding: 40px;
+    }
+    .services .service-card .card .image h2{
+        font-size: 30px;
+    }
+    .services .service-card .card .card-body p{
+        font-size: 20px;
+    }
+
+    /* bgvideo */
+
+    .bgvideo .bgvideo-title h2{
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 15px;
+        max-width: 300px;
+    }
+    .bgvideo .bgvideo-title .btn a{
+        padding: 10px 15px;
+        font-size: 9px;
+    }
+
+    /* doctors */
+
+    .doctors .title h4{
+        font-size: 18px;
+    }
+    .doctors .title h2{
+        font-size: 42px;
+    }
+
+    /* contact */
+
+    .contact .title h4{
+        font-size: 18px;
+    }
+    .contact .title h2{
+        font-size: 42px;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    /* footer */
+
+    .footer .logo{
+        padding: 0 30px;
+    }
+    .footer .logo-content{
+        padding: 0 30px;
+    }
+    .footer .links{
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+    .footer .department{
+        padding: 0 40px;
+        margin-top: 40px;
+    }
+    .footer .location{
+        margin-top: 20px;
+        padding: 0 30px;
+    }
+
+}
